@@ -206,7 +206,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
 <!-- ══════════════════ SLIDE 2: 무빙워크 ══════════════════ -->
 <div class="sl" id="s2">
   <div class="sh">
-    <span class="stag t-gold">02 / 09 &nbsp;·&nbsp; 문제 인식</span>
+    <span class="stag t-gold">02 / 08 &nbsp;·&nbsp; 문제 인식</span>
     <div class="stitle">선배들은 <em>무빙워크</em> 세대</div>
   </div>
   <div class="cols">
@@ -303,7 +303,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
 <!-- ══════════════════ SLIDE 3: 강점 + 복리 시뮬 ══════════════════ -->
 <div class="sl" id="s3">
   <div class="sh">
-    <span class="stag t-green">03 / 09 &nbsp;·&nbsp; 기회 인식</span>
+    <span class="stag t-green">03 / 08 &nbsp;·&nbsp; 기회 인식</span>
     <div class="stitle">신입사원이 가진 <em>두 가지 무기</em></div>
   </div>
   <div class="cols">
@@ -360,6 +360,10 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
       </div>
       <!-- ③ 차트 (SVG: 매월 200만, 연 10%, 0→50억 스케일) -->
       <div class="card" style="flex:1;position:relative;overflow:hidden;padding:14px 10px 10px;" id="s3chart">
+        <div id="s3-msg-wrap" style="position:absolute;top:66.67%;bottom:0;left:0;right:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;pointer-events:none;opacity:0;transition:opacity 0.5s;z-index:2;">
+          <div style="color:#60a5fa;font-size:11px;font-weight:700;">복리효과는 18~20년이 경과되는 시점에 극대화 됩니다.</div>
+          <div style="color:#fbbf24;font-size:13px;font-weight:800;">내 인생의 복리 효과, 지금 바로 투자를 시작해야 할 이유입니다.</div>
+        </div>
         <svg viewBox="0 0 640 275" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;">
           <defs>
             <clipPath id="s3clip"><rect id="s3cr" x="0" y="0" width="0" height="300"/></clipPath>
@@ -449,40 +453,31 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
 <!-- ══════════════════ SLIDE 4: 국민연금 복리 케이스 ★★★ ══════════════════ -->
 <div class="sl" id="s6">
   <div class="sh">
-    <span class="stag t-gold">04 / 09 &nbsp;·&nbsp; ★ 핵심 케이스</span>
+    <span class="stag t-gold">04 / 08 &nbsp;·&nbsp; ★ 핵심 케이스</span>
     <div class="stitle">복리 효과 — <span class="go">국민연금 37년의 기적</span></div>
   </div>
   <!-- Stats row -->
   <div style="display:flex;gap:14px;margin-bottom:16px;flex-shrink:0;">
     <div class="card" style="flex:1;text-align:center;padding:14px;">
-      <div style="font-size:10px;color:var(--txt3);margin-bottom:1px;">시작 연도</div>
-      <div style="font-size:8px;color:transparent;margin-bottom:3px;">—</div>
+      <div style="font-size:10px;color:var(--txt3);margin-bottom:6px;">시작 연도</div>
       <div style="font-size:30px;font-weight:900;color:var(--txt);line-height:1;">1988</div>
-      <div style="font-size:11px;color:transparent;margin-top:3px;">—</div>
     </div>
     <div class="card" style="flex:1;text-align:center;padding:14px;border-color:#b45309;">
-      <div style="font-size:10px;color:var(--txt3);margin-bottom:1px;">총 자산</div>
-      <div style="font-size:8px;color:var(--txt3);margin-bottom:3px;">2025년 말 잠정</div>
-      <div class="counter c-gold" id="c-total" style="font-size:30px;line-height:1;">0</div>
-      <div style="font-size:11px;color:var(--gold-l);margin-top:3px;">조원</div>
+      <div style="font-size:10px;color:var(--txt3);margin-bottom:6px;">총 자산</div>
+      <div class="counter c-gold" id="c-total" style="font-size:28px;line-height:1;">0</div>
     </div>
     <div class="card" style="flex:1;text-align:center;padding:14px;border-color:#475569;">
-      <div style="font-size:10px;color:var(--txt3);margin-bottom:1px;">납입 원금</div>
-      <div style="font-size:8px;color:var(--txt3);margin-bottom:3px;">기금 내 기여분</div>
-      <div class="counter c-slate" id="c-princ" style="font-size:30px;line-height:1;">0</div>
-      <div style="font-size:11px;color:var(--txt2);margin-top:3px;">조원</div>
+      <div style="font-size:10px;color:var(--txt3);margin-bottom:6px;">납입 원금</div>
+      <div class="counter c-slate" id="c-princ" style="font-size:28px;line-height:1;">0</div>
     </div>
     <div class="card" style="flex:1;text-align:center;padding:14px;border-color:#2563eb;">
-      <div style="font-size:10px;color:var(--txt3);margin-bottom:1px;">투자 수익</div>
-      <div style="font-size:8px;color:var(--txt3);margin-bottom:3px;">누적 운용수익금</div>
-      <div class="counter c-blue" id="c-ret" style="font-size:30px;line-height:1;">0</div>
-      <div style="font-size:11px;color:var(--blue-l);margin-top:3px;">조원</div>
+      <div style="font-size:10px;color:var(--txt3);margin-bottom:6px;">투자 수익</div>
+      <div class="counter c-blue" id="c-ret" style="font-size:28px;line-height:1;">0</div>
     </div>
     <div class="card" style="flex:1;text-align:center;padding:14px;border-color:#10b981;">
-      <div style="font-size:10px;color:var(--txt3);margin-bottom:1px;">연평균 수익률</div>
-      <div style="font-size:8px;color:transparent;margin-bottom:3px;">—</div>
+      <div style="font-size:10px;color:var(--txt3);margin-bottom:6px;">연평균 수익률</div>
       <div style="font-size:30px;font-weight:900;color:#10b981;line-height:1;">6.82%</div>
-      <div style="font-size:11px;color:var(--txt3);margin-top:3px;">1988~2024 확정</div>
+      <div style="font-size:11px;color:var(--txt3);margin-top:4px;">1988~2024 확정</div>
     </div>
   </div>
   <!-- Chart + insight -->
@@ -495,7 +490,15 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
         </div>
         <div style="font-size:10px;color:var(--txt3);">※ 2025년 말 기금 내 구성 기준</div>
       </div>
-      <div class="card" style="flex:1;min-height:0;overflow:hidden;position:relative;">
+      <div class="card" style="flex:1;min-height:0;position:relative;display:flex;flex-direction:column;gap:5px;padding:8px 10px 8px;">
+        <!-- 주식 비중 상세 배지 — animPie 완료 후 페이드인 -->
+        <div id="npStockBreakdown" style="position:absolute;top:8px;right:10px;z-index:3;
+          background:#050d1acc;border:1px solid #1e293b;border-radius:7px;
+          padding:4px 10px;font-size:10px;color:var(--txt3);letter-spacing:.15px;
+          opacity:0;transition:opacity 0.6s;pointer-events:none;">
+          주식 <strong style="color:#60a5fa;">55.3%</strong> 중 &nbsp;해외 <strong style="color:#60a5fa;">88%</strong> · 국내 <strong style="color:#a78bfa;">12%</strong>
+        </div>
+        <div style="flex:1;min-height:0;overflow:hidden;position:relative;">
         <svg id="npsvg" viewBox="0 0 680 220" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;transform:scale(1.06);transform-origin:center center;">
           <defs>
             <clipPath id="npclip"><rect id="npcr" x="0" y="0" width="0" height="240"/></clipPath>
@@ -537,9 +540,9 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
               points="52,195 233,189 299,181 332,176 365,168 431,152 497,132 563,104 646,46 662,13"
               stroke="#60a5fa" stroke-width="3" fill="none"/>
           </g>
-          <!-- 수익=원금 교차 표시 (약 2015년) -->
-          <line x1="497" y1="163" x2="497" y2="132" stroke="#10b981" stroke-width="1" stroke-dasharray="3 2" opacity=".5"/>
-          <text x="501" y="149" font-size="9" fill="#10b981" opacity=".8">수익=원금</text>
+          <!-- 수익=원금 교차 표시 (약 2015년) — 그래프 완료 후 표기 -->
+          <line id="npInflLine" x1="497" y1="163" x2="497" y2="132" stroke="#10b981" stroke-width="1" stroke-dasharray="3 2" opacity="0"/>
+          <text id="npInflTxt" x="501" y="149" font-size="9" fill="#10b981" opacity="0">수익=원금</text>
 
           <!-- ── 포트폴리오 파이차트 (좌측 상단, 2025년 11월 기준) ── -->
           <!-- cx=120 cy=58 r=35 | 시계방향 12시 시작 -->
@@ -569,23 +572,21 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
             <circle id="pieArc3" cx="120" cy="58" r="24.5"
               fill="none" stroke="#f59e0b" stroke-width="21" stroke-linecap="butt"
               stroke-dasharray="0 153.94" transform="rotate(212.4,120,58)"/>
-            <!-- 도넛 구멍 -->
-            <circle cx="120" cy="58" r="14" fill="#07101e"/>
+            <!-- 도넛 구멍 — 파이 시작 전 숨김 -->
+            <circle id="pieHole" cx="120" cy="58" r="14" fill="#07101e" opacity="0"/>
             <!-- ③ 범례 + 출처 — 파이 완성 후 페이드인 -->
             <g id="pieLegendG" opacity="0">
               <!-- 주식 -->
-              <rect x="157" y="38" width="8" height="8" rx="1.5" fill="#3b82f6"/>
-              <text x="169" y="45" font-size="7.5" fill="#94a3b8" stroke="#07101e" stroke-width="2.5" paint-order="stroke">주식 <tspan font-weight="700" fill="#93c5fd">55.3%</tspan></text>
-              <text x="169" y="53" font-size="5.5" fill="#64748b" stroke="#07101e" stroke-width="2" paint-order="stroke">국내 14.8 · 해외 40.5%</text>
+              <rect x="157" y="36" width="7" height="7" rx="1.5" fill="#3b82f6"/>
+              <text x="167" y="43" font-size="6.5" fill="#94a3b8" stroke="#07101e" stroke-width="2.5" paint-order="stroke">주식 <tspan font-weight="700" fill="#93c5fd">55.3%</tspan></text>
               <!-- 채권 -->
-              <rect x="157" y="58" width="8" height="8" rx="1.5" fill="#64748b"/>
-              <text x="169" y="65" font-size="7.5" fill="#94a3b8" stroke="#07101e" stroke-width="2.5" paint-order="stroke">채권 <tspan font-weight="700" fill="#cbd5e1">28.7%</tspan></text>
-              <text x="169" y="73" font-size="5.5" fill="#64748b" stroke="#07101e" stroke-width="2" paint-order="stroke">국내 24.6 · 해외 4.1%</text>
+              <rect x="157" y="50" width="7" height="7" rx="1.5" fill="#64748b"/>
+              <text x="167" y="57" font-size="6.5" fill="#94a3b8" stroke="#07101e" stroke-width="2.5" paint-order="stroke">채권 <tspan font-weight="700" fill="#cbd5e1">28.7%</tspan></text>
               <!-- 대체 -->
-              <rect x="157" y="78" width="8" height="8" rx="1.5" fill="#f59e0b"/>
-              <text x="169" y="85" font-size="7.5" fill="#94a3b8" stroke="#07101e" stroke-width="2.5" paint-order="stroke">대체 <tspan font-weight="700" fill="#fcd34d">15.9%</tspan></text>
+              <rect x="157" y="64" width="7" height="7" rx="1.5" fill="#f59e0b"/>
+              <text x="167" y="71" font-size="6.5" fill="#94a3b8" stroke="#07101e" stroke-width="2.5" paint-order="stroke">대체 <tspan font-weight="700" fill="#fcd34d">15.9%</tspan></text>
               <!-- 출처 -->
-              <text x="157" y="100" font-size="5" fill="#334155" stroke="#07101e" stroke-width="2" paint-order="stroke">출처: 국민연금기금운용본부</text>
+              <text x="157" y="83" font-size="5" fill="#334155" stroke="#07101e" stroke-width="2" paint-order="stroke">출처: 국민연금기금운용본부</text>
             </g>
           </g>
           <!-- End labels (text-anchor=end → 왼쪽으로 성장, viewBox 잘림 방지) -->
@@ -596,6 +597,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
           <!-- 출처 표기 -->
           <text x="652" y="213" text-anchor="end" font-size="8.5" fill="#334155">2025년 말 기준 · 출처: 국민연금기금운용본부</text>
         </svg>
+        </div>
       </div>
     </div>
     <!-- Right side -->
@@ -611,7 +613,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
         <div style="height:1px;background:linear-gradient(90deg,transparent,#b4530950,transparent);flex-shrink:0;"></div>
         <!-- 중단: 핵심 메시지 → flex:1 + 세로 중앙 -->
         <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;">
-          <div style="font-size:14px;font-weight:800;color:#fbbf24;line-height:1.4;letter-spacing:-.3px;">
+          <div style="font-size:16px;font-weight:800;color:#fbbf24;line-height:1.4;letter-spacing:-.3px;">
             수익이 원금을<br>넘어선 순간
           </div>
           <div style="font-size:12px;font-weight:700;color:#6ee7b7;letter-spacing:-.2px;">
@@ -619,11 +621,11 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
           </div>
         </div>
         <!-- 하단: 이것이 복리효과 + green box -->
-        <div style="flex-shrink:0;display:flex;flex-direction:column;gap:10px;">
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px;justify-content:flex-end;">
           <div style="border-top:1px solid #1e2a40;padding-top:14px;text-align:center;margin-top:4px;">
             <div style="font-size:13px;color:var(--txt3);line-height:1.7;">
-              이것이 <strong style="color:#fbbf24;">복리효과</strong>입니다.<br>
-              국민연금 37년이 증명했습니다.
+              장기투자와 복리효과의 산증인,<br>
+              <strong style="color:#fbbf24;">국민연금기금</strong>
             </div>
           </div>
           <div style="background:#064e3b;border-radius:10px;padding:12px;text-align:center;">
@@ -641,7 +643,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
 <!-- ══════════════════ SLIDE 5: S&P 500 장기투자 ══════════════════ -->
 <div class="sl" id="s5">
   <div class="sh">
-    <span class="stag t-green">05 / 09 &nbsp;·&nbsp; 투자 원칙 ①</span>
+    <span class="stag t-green">05 / 08 &nbsp;·&nbsp; 투자 원칙 ①</span>
     <div class="stitle">장기투자 — S&amp;P 500의 <em>30년 기록</em></div>
   </div>
   <div class="cols">
@@ -679,11 +681,24 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
             <polyline points="50,210 75,205 100,198 130,202 155,196 175,190 196,195 218,203 240,205 260,200 270,206 295,200 320,192 340,185 360,180 374,186 395,193 415,185 435,170 456,155 480,135 510,110 540,80 566,95 590,65 615,40 640,28 650,22"
               stroke="#10b981" stroke-width="2.5" fill="none"/>
           </g>
-          <!-- Crisis labels (hidden) -->
-          <text class="crisis-lbl" x="226" y="30" text-anchor="middle" font-size="8" fill="#f87171" opacity="0">IMF</text>
-          <text class="crisis-lbl" x="305" y="30" text-anchor="middle" font-size="8" fill="#f87171" opacity="0">닷컴버블</text>
-          <text class="crisis-lbl" x="404" y="30" text-anchor="middle" font-size="8" fill="#f87171" opacity="0">금융위기</text>
-          <text class="crisis-lbl" x="570" y="30" text-anchor="middle" font-size="8" fill="#f87171" opacity="0">코로나</text>
+          <!-- Crisis vertical dotted lines (hidden initially) -->
+          <line class="crisis-line" x1="226" y1="15" x2="226" y2="210" stroke="#f87171" stroke-width="1.2" stroke-dasharray="3 2" opacity="0"/>
+          <line class="crisis-line" x1="305" y1="15" x2="305" y2="210" stroke="#f87171" stroke-width="1.2" stroke-dasharray="3 2" opacity="0"/>
+          <line class="crisis-line" x1="404" y1="15" x2="404" y2="210" stroke="#f87171" stroke-width="1.2" stroke-dasharray="3 2" opacity="0"/>
+          <line class="crisis-line" x1="570" y1="15" x2="570" y2="210" stroke="#f87171" stroke-width="1.2" stroke-dasharray="3 2" opacity="0"/>
+          <!-- Crisis labels (hidden) — 위기명 + 낙폭 -->
+          <text class="crisis-lbl" x="226" y="22" text-anchor="middle" font-size="9" fill="#f87171" font-weight="700" stroke="#07101e" stroke-width="2.5" paint-order="stroke" opacity="0">
+            <tspan x="226" dy="0">IMF</tspan><tspan x="226" dy="12" font-size="8.5" font-weight="800">-19.3%</tspan>
+          </text>
+          <text class="crisis-lbl" x="305" y="22" text-anchor="middle" font-size="9" fill="#f87171" font-weight="700" stroke="#07101e" stroke-width="2.5" paint-order="stroke" opacity="0">
+            <tspan x="305" dy="0">닷컴버블</tspan><tspan x="305" dy="12" font-size="8.5" font-weight="800">-49.1%</tspan>
+          </text>
+          <text class="crisis-lbl" x="404" y="22" text-anchor="middle" font-size="9" fill="#f87171" font-weight="700" stroke="#07101e" stroke-width="2.5" paint-order="stroke" opacity="0">
+            <tspan x="404" dy="0">금융위기</tspan><tspan x="404" dy="12" font-size="8.5" font-weight="800">-56.8%</tspan>
+          </text>
+          <text class="crisis-lbl" x="570" y="22" text-anchor="middle" font-size="9" fill="#f87171" font-weight="700" stroke="#07101e" stroke-width="2.5" paint-order="stroke" opacity="0">
+            <tspan x="570" dy="0">코로나</tspan><tspan x="570" dy="12" font-size="8.5" font-weight="800">-33.9%</tspan>
+          </text>
           <!-- End annotation -->
           <text id="spendlbl" x="652" y="24" font-size="9" fill="#6ee7b7" opacity="0">+1,000%↑</text>
         </svg>
@@ -697,391 +712,568 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
         <div style="width:42%;background:#2563eb;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">20년+ 안정 수익 구간</div>
       </div>
     </div>
-    <!-- Right stats -->
+    <!-- Right stats — 보유 기간별 수익률 범위 표 -->
     <div style="display:flex;flex-direction:column;gap:12px;width:220px;flex-shrink:0;">
-      <div class="card" style="border-color:#10b981;text-align:center;padding:20px;">
-        <div style="font-size:11px;color:var(--txt3);margin-bottom:6px;">30년 연평균 수익률</div>
-        <div style="font-size:48px;font-weight:900;color:#10b981;">10.5%</div>
-        <div style="font-size:11px;color:var(--green-l);">모든 위기 포함</div>
-      </div>
-      <div class="card" style="flex:1;display:flex;flex-direction:column;gap:8px;">
-        <div style="font-size:11px;color:var(--txt3);font-weight:700;">30년을 10년씩 잘라도</div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--txt2);">1993~2003</span><strong style="color:#10b981;">약 10%</strong></div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--txt2);">2003~2013</span><strong style="color:#10b981;">약 10%</strong></div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--txt2);">2013~2023</span><strong style="color:#10b981;">약 10%</strong></div>
-        <div style="height:1px;background:var(--border);"></div>
-        <div style="font-size:11px;color:var(--txt3);line-height:1.6;">IMF · 닷컴버블 · 금융위기 · 코로나 다 겪고도 <strong style="color:#6ee7b7;">꺾이지 않았습니다</strong></div>
-      </div>
-      <div class="card" style="background:#0a1e14;border-color:#10b981;">
-        <div style="font-size:11px;color:var(--txt3);">기업은 성장하려는 속성이 있고,<br>복리는 시간이 길수록 강력해집니다.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════ SLIDE 6: 두 가지 목표 ══════════════════ -->
-<div class="sl" id="s4">
-  <div class="sh">
-    <span class="stag t-purple">06 / 09 &nbsp;·&nbsp; 목표 설정</span>
-    <div class="stitle">두 가지 목표 — <em>5년 단기</em> & <span class="go">10년+ 장기</span> 병행</div>
-  </div>
-  <div class="cols">
-    <!-- Goal 1 -->
-    <div class="card click" style="flex:1;border-color:#2563eb;display:flex;flex-direction:column;gap:14px;" onclick="toggleG1()">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:#2563eb;color:#fff;font-size:11px;font-weight:800;padding:5px 12px;border-radius:20px;">목표 1 · 단기</div>
-        <span class="hint">클릭해서 세부 내용 보기</span>
-      </div>
-      <div style="font-size:36px;">🏠</div>
-      <div style="font-size:clamp(24px,2.8vw,36px);font-weight:900;color:#60a5fa;">5년 내 3억</div>
-      <div style="font-size:16px;color:var(--txt);">내집 마련</div>
-      <div id="g1detail" style="display:none;flex-direction:column;gap:8px;">
-        <div style="height:1px;background:var(--border);margin:4px 0;"></div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>월 저축</span><strong style="color:#fff;">200만원 × 60개월</strong>
+      <div class="card" style="flex:1;display:flex;flex-direction:column;padding:16px;">
+        <div style="font-size:11px;color:var(--txt3);font-weight:700;margin-bottom:10px;letter-spacing:-.2px;">S&amp;P 500 보유 기간별 수익률 범위</div>
+        <!-- 헤더 -->
+        <div style="display:grid;grid-template-columns:36px 1fr 1fr;font-size:9.5px;color:var(--txt3);padding-bottom:6px;border-bottom:1px solid var(--border);">
+          <span>기간</span><span style="text-align:right;color:#6ee7b7;">최고</span><span style="text-align:right;color:#f87171;">최저</span>
         </div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>+ 성과급</span><strong style="color:#6ee7b7;">매년 추가 투입</strong>
+        <!-- 1년 -->
+        <div style="display:grid;grid-template-columns:36px 1fr 1fr;align-items:center;padding:5px 0;border-bottom:1px solid #1e2a4040;">
+          <span style="font-size:10px;color:var(--txt2);">1년</span>
+          <span style="text-align:right;color:#6ee7b7;font-weight:800;font-size:12px;">+54%</span>
+          <span style="text-align:right;color:#f87171;font-weight:800;font-size:12px;">-43%</span>
         </div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>자기 자본 3억 + 대출 4억</span><strong style="color:#fbbf24;">= 7억 아파트</strong>
+        <!-- 5년 -->
+        <div style="display:grid;grid-template-columns:36px 1fr 1fr;align-items:center;padding:5px 0;border-bottom:1px solid #1e2a4040;">
+          <span style="font-size:10px;color:var(--txt2);">5년</span>
+          <span style="text-align:right;color:#6ee7b7;font-weight:800;font-size:12px;">+29%</span>
+          <span style="text-align:right;color:#f87171;font-weight:800;font-size:12px;">-13%</span>
         </div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>30년 모기지 월 상환액</span><strong style="color:#fff;">약 140만원</strong>
+        <!-- 10년 -->
+        <div style="display:grid;grid-template-columns:36px 1fr 1fr;align-items:center;padding:5px 0;border-bottom:1px solid #1e2a4040;">
+          <span style="font-size:10px;color:var(--txt2);">10년</span>
+          <span style="text-align:right;color:#6ee7b7;font-weight:800;font-size:12px;">+19%</span>
+          <span style="text-align:right;color:#f87171;font-weight:800;font-size:12px;">-1%</span>
         </div>
-        <div style="background:#1a2a40;border-radius:8px;padding:8px 12px;font-size:11px;color:#60a5fa;">핵심 계좌: <strong>ISA (개인종합자산관리계좌)</strong></div>
-      </div>
-    </div>
-    <!-- Goal 2 -->
-    <div class="card click" style="flex:1;border-color:#f59e0b;display:flex;flex-direction:column;gap:14px;" onclick="toggleG2()">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:#b45309;color:#fff;font-size:11px;font-weight:800;padding:5px 12px;border-radius:20px;">목표 2 · 장기</div>
-        <span class="hint">클릭해서 세부 내용 보기</span>
-      </div>
-      <div style="font-size:36px;">📈</div>
-      <div style="font-size:clamp(20px,2.4vw,30px);font-weight:900;color:#fbbf24;">10년+ 장기투자</div>
-      <div style="font-size:16px;color:var(--txt);">40대 추가 소득원 확보</div>
-      <div id="g2detail" style="display:none;flex-direction:column;gap:8px;">
-        <div style="height:1px;background:var(--border);margin:4px 0;"></div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>복리 극대화 구간</span><strong style="color:#fff;">18~20년 이후 급성장</strong>
+        <!-- 20년 -->
+        <div style="display:grid;grid-template-columns:36px 1fr 1fr;align-items:center;padding:5px 0;margin-bottom:10px;">
+          <span style="font-size:10px;color:var(--txt2);">20년</span>
+          <span style="text-align:right;color:#6ee7b7;font-weight:800;font-size:12px;">+18%</span>
+          <span style="text-align:right;color:#6ee7b7;font-weight:800;font-size:12px;">+6.5%</span>
         </div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>집 사고 나서 시작하면?</span><strong style="color:#ef4444;">복리 골든타임 놓침</strong>
+        <!-- 강조 문구 -->
+        <div style="background:#064e3b;border-radius:8px;padding:10px;text-align:center;margin-bottom:8px;">
+          <div style="font-size:10.5px;color:#6ee7b7;font-weight:700;line-height:1.55;">
+            20년 장기 투자 시<br>역사적 원금 손실 확률 <strong style="font-size:14px;color:#34d399;">0%</strong>
+          </div>
         </div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--txt2);">
-          <span>지금부터 병행 시작</span><strong style="color:#6ee7b7;">→ 40대 불로소득 실현</strong>
-        </div>
-        <div style="background:#1a1a10;border-radius:8px;padding:8px 12px;font-size:11px;color:#fbbf24;">핵심 계좌: <strong>연금저축 + 비과세연금</strong></div>
-      </div>
-    </div>
-    <!-- Allocation -->
-    <div style="display:flex;flex-direction:column;gap:16px;width:260px;flex-shrink:0;">
-      <div class="card" style="display:flex;flex-direction:column;gap:14px;">
-        <div style="font-size:13px;font-weight:700;color:var(--txt);">월 200만원 배분 방식</div>
-        <div class="abar" style="height:28px;" id="abar">
-          <div class="abar-seg" id="ab1" style="width:0%;background:#2563eb;transition:width .8s .3s;">ISA 70%</div>
-          <div class="abar-seg" id="ab2" style="width:0%;background:#b45309;transition:width .8s .6s;">장기 30%</div>
-        </div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;">
-          <span style="color:#60a5fa;">● ISA 140만원</span>
-          <span style="color:#fbbf24;">● 장기 60만원</span>
-        </div>
-        <div style="height:1px;background:var(--border);"></div>
-        <div style="font-size:11px;color:var(--txt3);line-height:1.7;">
-          집 사느라 10년 쓰고 투자를 시작하면<br>
-          <strong style="color:#ef4444;">복리의 마법을 못 봅니다.</strong><br>
-          두 트랙을 <strong style="color:#6ee7b7;">지금 동시에 시작</strong>해야 합니다.
+        <!-- 출처 -->
+        <div style="font-size:8.5px;color:var(--txt3);text-align:right;line-height:1.4;margin-top:auto;">
+          JP Morgan Guide to the Markets<br>(Historical Rolling Returns)
         </div>
       </div>
-      <div class="card" style="background:linear-gradient(135deg,#0d1525,#1a2035);border-color:#2563eb;text-align:center;padding:16px;">
-        <div style="font-size:11px;color:var(--txt3);margin-bottom:6px;">5년 후 예상 시나리오</div>
-        <div style="font-size:22px;font-weight:900;color:#fbbf24;">3억 달성</div>
-        <div style="font-size:11px;color:var(--txt2);">+ 장기 투자 씨앗 동시 성장 중</div>
+      <!-- 하단 카드 — 4페이지와 동일한 짙은 녹색 테마 -->
+      <div style="background:#064e3b;border-radius:10px;padding:12px;text-align:center;border:1px solid #10b98140;flex-shrink:0;">
+        <div style="font-size:11px;color:#6ee7b7;font-weight:700;line-height:1.6;">
+          장기투자 승리의 역사적 산증인,<br>
+          <strong style="font-size:13px;color:#34d399;">S&amp;P500</strong>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════ SLIDE 7: 미국 & ETF ══════════════════ -->
+<!-- ══════════════════ SLIDE 6: 미국 & ETF ══════════════════ -->
 <div class="sl" id="s7">
   <div class="sh">
-    <span class="stag t-red">07 / 09 &nbsp;·&nbsp; 투자 원칙 ③④</span>
-    <div class="stitle">미국 = <em>건물주</em>, ETF = <em>자동 선별기</em></div>
+    <span class="stag t-red">06 / 08 &nbsp;·&nbsp; 투자 원칙 ③</span>
+    <div class="stitle">개별 종목 vs S&amp;P 500: <em>누가 살아남는가?</em></div>
   </div>
+
   <div class="cols">
-    <!-- Building metaphor -->
+
+    <!-- 좌측: 안내 문구 + 선택 카드 4개 + 비교 패널 -->
     <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
-      <div class="card" style="flex:1.2;display:flex;flex-direction:column;gap:10px;">
-        <div style="font-size:12px;color:var(--txt3);">건물 비유로 이해하는 글로벌 경제 구도</div>
-        <div style="display:flex;gap:12px;flex:1;align-items:center;">
-          <!-- US Building -->
-          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;" onclick="toggleUS()" id="usbld">
-            <div style="background:#1e3a6e;border:2px solid #2563eb;border-radius:10px;padding:14px 20px;text-align:center;transition:all .2s;width:100%;">
-              <div style="font-size:28px;">🏢</div>
-              <div style="font-size:14px;font-weight:800;color:#60a5fa;">미국</div>
-              <div style="font-size:11px;color:var(--txt3);">건물주</div>
-            </div>
-            <div id="uslist" style="display:none;background:#0d1525;border:1px solid #2563eb;border-radius:8px;padding:10px;width:100%;font-size:11px;">
-              <div style="color:#60a5fa;font-weight:700;margin-bottom:6px;">구독료·라이센스 수취</div>
-              <div style="color:var(--txt2);">🤖 AI · 소프트웨어 구독</div>
-              <div style="color:var(--txt2);">📱 iOS 앱스토어 수수료</div>
-              <div style="color:var(--txt2);">🎬 넷플릭스·스포티파이</div>
-              <div style="color:var(--txt2);">⚛️ 원자력 기술 라이센스</div>
-              <div style="color:var(--txt2);">🚀 AI·로봇·우주 혁신 주도</div>
-            </div>
-            <span class="hint">클릭해서 확인</span>
-          </div>
-          <div style="font-size:24px;color:var(--txt3);">→</div>
-          <!-- Korea -->
-          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;">
-            <div style="background:#0e2a1a;border:2px solid #10b981;border-radius:10px;padding:14px 20px;text-align:center;width:100%;">
-              <div style="font-size:28px;">🇰🇷</div>
-              <div style="font-size:14px;font-weight:800;color:#10b981;">한국</div>
-              <div style="font-size:11px;color:var(--txt3);">1층 세입자</div>
-              <div style="font-size:10px;color:#6ee7b7;margin-top:4px;">지금 장사 잘 됨</div>
-            </div>
-          </div>
-          <div style="font-size:16px;color:var(--txt3);">↔</div>
-          <!-- China -->
-          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;">
-            <div style="background:#1a0a0a;border:2px solid #ef4444;border-radius:10px;padding:14px 20px;text-align:center;width:100%;">
-              <div style="font-size:28px;">🇨🇳</div>
-              <div style="font-size:14px;font-weight:800;color:#ef4444;">중국</div>
-              <div style="font-size:11px;color:var(--txt3);">과거 세입자</div>
-              <div style="font-size:10px;color:#f87171;margin-top:4px;">건물주 눈 밖에 퇴출</div>
-            </div>
-          </div>
+      <!-- 안내 문구 -->
+      <div style="font-size:10.5px;color:var(--txt3);flex-shrink:0;">
+        ▼ 시대를 호령했던 기업을 클릭해 S&amp;P 500 대비 성과 비교
+      </div>
+
+      <!-- 선택 카드 4개 -->
+      <div style="display:flex;gap:10px;flex-shrink:0;align-items:stretch;">
+        <div class="card click" id="gc-ge"
+             style="flex:1;border-color:#ef4444;padding:12px 8px;text-align:center;
+                    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;"
+             onclick="selectStock('ge')">
+          <div style="font-size:8.5px;color:var(--txt3);letter-spacing:.4px;">30년 전 1위</div>
+          <div style="font-size:24px;line-height:1.2;">🏭</div>
+          <div style="font-size:14px;font-weight:800;color:#ef4444;">GE</div>
+          <div style="font-size:8.5px;color:var(--txt3);line-height:1.4;">압도적 글로벌 1위</div>
         </div>
-        <div style="background:#0a1525;border-radius:8px;padding:10px;font-size:12px;color:var(--txt2);">
-          → 포트폴리오: <strong style="color:#60a5fa;">미국 70%</strong> + <strong style="color:#10b981;">한국 30%</strong> — 건물주에게 베팅하면서 세입자도 보유
+        <div class="card click" id="gc-exxon"
+             style="flex:1;border-color:#f59e0b;padding:12px 8px;text-align:center;
+                    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;"
+             onclick="selectStock('exxon')">
+          <div style="font-size:8.5px;color:var(--txt3);letter-spacing:.4px;">20년 전 1위</div>
+          <div style="font-size:24px;line-height:1.2;">⛽</div>
+          <div style="font-size:14px;font-weight:800;color:#f59e0b;">Exxon</div>
+          <div style="font-size:8.5px;color:var(--txt3);line-height:1.4;">에너지 시대의 주인공</div>
+        </div>
+        <div class="card click" id="gc-apple"
+             style="flex:1;border-color:#60a5fa;padding:12px 8px;text-align:center;
+                    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;"
+             onclick="selectStock('apple')">
+          <div style="font-size:8.5px;color:var(--txt3);letter-spacing:.4px;">현재 1위</div>
+          <div style="font-size:24px;line-height:1.2;">🍎</div>
+          <div style="font-size:14px;font-weight:800;color:#60a5fa;">Apple</div>
+          <div style="font-size:8.5px;color:var(--txt3);line-height:1.4;">압도적 수익률 기록 중</div>
+        </div>
+        <div class="card"
+             style="flex:1;border-color:#10b981;padding:12px 8px;text-align:center;
+                    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;">
+          <div style="font-size:8.5px;color:var(--txt3);letter-spacing:.4px;">S&amp;P 500 지난 30년</div>
+          <div style="font-size:30px;font-weight:900;color:#10b981;line-height:1.1;">+1,800%</div>
+          <div style="font-size:8.5px;color:var(--txt3);line-height:1.4;">GE · Exxon · Apple<br>모두 품고 달성</div>
         </div>
       </div>
-      <!-- ETF case -->
-      <div class="card" style="flex:1;display:flex;gap:16px;align-items:center;">
-        <div style="flex:1;">
-          <div style="font-size:12px;color:var(--txt3);margin-bottom:10px;">개별 주식 vs ETF — 30년 시나리오</div>
-          <div style="display:flex;gap:10px;">
-            <div class="card click" style="flex:1;border-color:#ef4444;text-align:center;padding:12px;" onclick="showGE()">
-              <div style="font-size:11px;color:var(--txt3);">30년 전 GE 단독 투자</div>
-              <div style="font-size:22px;font-weight:900;color:#ef4444;" id="gelbl">?</div>
-              <div style="font-size:10px;color:var(--txt3);" id="gesub">클릭해서 확인</div>
-            </div>
-            <div style="display:flex;align-items:center;font-size:20px;color:var(--txt3);">vs</div>
-            <div class="card click" style="flex:1;border-color:#10b981;text-align:center;padding:12px;" onclick="showETF()">
-              <div style="font-size:11px;color:var(--txt3);">S&amp;P 500 ETF 투자</div>
-              <div style="font-size:22px;font-weight:900;color:#10b981;" id="etflbl">?</div>
-              <div style="font-size:10px;color:var(--txt3);" id="etfsub">클릭해서 확인</div>
-            </div>
-          </div>
+
+      <!-- 비교 결과 패널 -->
+      <div id="stock-compare" class="card"
+           style="flex:1;min-height:0;display:flex;flex-direction:column;gap:10px;padding:16px 20px;">
+        <div id="compare-placeholder"
+             style="flex:1;display:flex;align-items:center;justify-content:center;
+                    text-align:center;color:var(--txt3);font-size:12px;line-height:1.8;">
+          위 기업 중 하나를 클릭하면<br>S&amp;P 500 대비 실제 수익률을 비교합니다.
         </div>
-        <div style="width:180px;flex-shrink:0;">
-          <div style="font-size:11px;color:var(--txt3);margin-bottom:8px;">철수님 포트폴리오</div>
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <div style="display:flex;justify-content:space-between;font-size:11px;padding:6px 10px;background:#1e3a6e;border-radius:6px;"><span style="color:var(--blue-l);">지수 ETF</span><strong style="color:#fff;">70%</strong></div>
-            <div style="font-size:10px;color:var(--txt3);padding:0 10px;">S&P500, 나스닥 100</div>
-            <div style="display:flex;justify-content:space-between;font-size:11px;padding:6px 10px;background:#2e1065;border-radius:6px;"><span style="color:var(--purple-l);">섹터 ETF</span><strong style="color:#fff;">30%</strong></div>
-            <div style="font-size:10px;color:var(--txt3);padding:0 10px;">AI · 로봇 · 전력</div>
+        <div id="compare-content" style="display:none;flex-direction:column;gap:10px;flex:1;">
+          <div id="compare-title" style="font-size:11px;font-weight:700;color:var(--txt2);"></div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--txt3);margin-bottom:5px;">
+              <span id="csl"></span><span id="csv" style="font-weight:700;"></span>
+            </div>
+            <div style="background:#1e2a40;border-radius:5px;height:26px;overflow:hidden;">
+              <div id="csbar" style="height:100%;border-radius:5px;width:0;transition:width .8s ease-out;
+                   display:flex;align-items:center;padding:0 12px;font-size:10px;font-weight:700;
+                   color:#fff;white-space:nowrap;min-width:0;"></div>
+            </div>
           </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--txt3);margin-bottom:5px;">
+              <span>S&amp;P 500</span><span id="spv" style="font-weight:700;color:#10b981;"></span>
+            </div>
+            <div style="background:#1e2a40;border-radius:5px;height:26px;overflow:hidden;">
+              <div id="spbar" style="height:100%;background:#10b981;border-radius:5px;width:0;
+                   transition:width .8s ease-out;display:flex;align-items:center;padding:0 12px;
+                   font-size:10px;font-weight:700;color:#fff;white-space:nowrap;min-width:0;"></div>
+            </div>
+          </div>
+          <div id="cmsg"
+               style="font-size:11px;color:var(--txt2);line-height:1.7;
+                      background:#06111e;border-radius:8px;padding:12px 14px;flex:1;"></div>
         </div>
       </div>
     </div>
+
+    <!-- 우측: S&P 500 승리 공식 — 세로 사이드바 (s5 스타일) -->
+    <div style="display:flex;flex-direction:column;gap:12px;width:220px;flex-shrink:0;">
+      <div class="card" style="flex:1;background:linear-gradient(160deg,#0a1e14 0%,#0d1525 60%);
+                                border-color:#10b981;padding:18px 16px;display:flex;flex-direction:column;min-height:0;">
+        <!-- 제목 -->
+        <div style="font-size:10px;font-weight:700;color:var(--txt3);letter-spacing:.3px;margin-bottom:12px;flex-shrink:0;">
+          ■ S&amp;P 500의 승리 공식
+        </div>
+        <!-- 항목 4개 세로 배치 -->
+        <div style="display:flex;flex-direction:column;gap:8px;flex:1;min-height:0;justify-content:space-between;">
+          <div style="font-size:9.5px;color:var(--txt2);line-height:1.6;padding:9px 12px;
+                      background:#06111e;border-radius:6px;border-left:2px solid #ef4444;flex:1;display:flex;align-items:center;">
+            ❌ 30년 전: GE에만 투자 → 지수의 <strong style="color:#f87171;">1/5 수준</strong>
+          </div>
+          <div style="font-size:9.5px;color:var(--txt2);line-height:1.6;padding:9px 12px;
+                      background:#06111e;border-radius:6px;border-left:2px solid #f59e0b;flex:1;display:flex;align-items:center;">
+            ❌ 20년 전: Exxon에만 투자 → 테크 시대에 <strong style="color:#fcd34d;">정체</strong>
+          </div>
+          <div style="font-size:9.5px;color:var(--txt2);line-height:1.6;padding:9px 12px;
+                      background:#06111e;border-radius:6px;border-left:2px solid #60a5fa;flex:1;display:flex;align-items:center;">
+            ⚠️ 지금: Apple에만 투자 → 다음 GE가 될 수 있음
+          </div>
+          <div style="font-size:9.5px;color:#6ee7b7;font-weight:700;line-height:1.6;padding:9px 12px;
+                      background:#064e3b;border-radius:6px;border-left:2px solid #34d399;flex:1;display:flex;align-items:center;">
+            ✅ S&amp;P 500은 항상 1등을 자동 편입, 탈락자는 자동 제외
+          </div>
+        </div>
+      </div>
+      <!-- 하단 콜아웃 카드 -->
+      <div style="background:#1a0d00;border-radius:10px;padding:12px;text-align:center;
+                  border:1px solid #f59e0b50;flex-shrink:0;">
+        <div style="font-size:11px;font-weight:800;color:#fbbf24;line-height:1.65;">
+          애플을 맞추려 하지 마세요.<br>
+          <span style="color:#6ee7b7;font-size:10.5px;">S&amp;P 500을 사면<br>애플은 자동으로 따라옵니다</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- ══════════════════ SLIDE 8: 절세계좌 ══════════════════ -->
+<!-- ══════════════════ SLIDE 8: 세후 실질 수익률 극대화 (절세전략+마무리 통합) ══════════════════ -->
 <div class="sl" id="s8">
-  <div class="sh">
-    <span class="stag t-purple">08 / 09 &nbsp;·&nbsp; 절세 전략</span>
-    <div class="stitle">세금이 복리를 갉아먹는다 — <em>4대 절세계좌</em></div>
+  <div class="sh" style="margin-bottom:12px;">
+    <span class="stag t-purple">07 / 08 &nbsp;·&nbsp; 절세 전략</span>
+    <div class="stitle">장기투자의 필수전략: <em>세후 실질수익률 극대화</em></div>
   </div>
-  <!-- Tax impact -->
-  <div class="card" style="margin-bottom:16px;flex-shrink:0;padding:16px;">
-    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-      <div style="font-size:13px;color:var(--txt3);">1억 × 연 10% = 1,000만원 수익 → 세금 22% 부과 시</div>
-      <div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:200px;">
-        <div style="display:flex;align-items:center;gap:8px;">
-          <div style="width:100%;background:#10b981;height:18px;border-radius:4px;display:flex;align-items:center;padding:0 10px;font-size:10px;font-weight:700;color:#fff;">세전 수익률 10% (1,000만원)</div>
-        </div>
-        <div style="display:flex;align-items:center;gap:8px;">
-          <div style="width:78%;background:#ef4444;height:18px;border-radius:4px;display:flex;align-items:center;padding:0 10px;font-size:10px;font-weight:700;color:#fff;">세후 실질수익 7.8% (780만원)</div>
-          <div style="font-size:11px;color:#f87171;white-space:nowrap;">-220만원 세금</div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;flex:1;min-height:0;">
+
+    <!-- ══ 상단 50%: 세금 구조 표 + 절세계좌 3종 ══ -->
+    <div style="display:flex;gap:12px;flex:1;min-height:0;">
+
+      <!-- 좌측: 세금 구조 표 (하단 뱃지 없음) -->
+      <div style="flex:2;min-height:0;">
+        <div class="card" style="height:100%;padding:14px 16px;display:flex;flex-direction:column;
+                                  justify-content:center;min-height:0;">
+          <div style="font-size:10px;font-weight:700;color:var(--txt3);margin-bottom:10px;">■ 투자 방식별 세금 구조</div>
+          <table style="width:100%;border-collapse:collapse;font-size:10.5px;">
+            <thead>
+              <tr style="border-bottom:1px solid #1e293b;">
+                <th style="text-align:left;padding:6px 6px;font-weight:600;color:#64748b;">투자 방식</th>
+                <th style="text-align:center;padding:6px 5px;font-weight:600;color:#64748b;">배당세</th>
+                <th style="text-align:center;padding:6px 5px;font-weight:600;color:#64748b;">매매차익</th>
+                <th style="text-align:center;padding:6px 5px;font-weight:600;color:#64748b;">비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #0f172a;">
+                <td style="padding:9px 6px;color:#f87171;font-weight:700;">미국 직투 (SPY·QQQ)</td>
+                <td style="text-align:center;color:#f87171;font-weight:800;padding:9px 5px;">15%</td>
+                <td style="text-align:center;color:#ef4444;font-weight:800;padding:9px 5px;">22%</td>
+                <td style="text-align:center;color:#475569;font-size:9px;padding:9px 5px;">양도세 (250만 공제)</td>
+              </tr>
+              <tr style="border-bottom:1px solid #0f172a;">
+                <td style="padding:9px 6px;color:#fbbf24;font-weight:700;">국내상장 해외 ETF</td>
+                <td style="text-align:center;color:#fbbf24;font-weight:800;padding:9px 5px;">15.4%</td>
+                <td style="text-align:center;color:#fbbf24;font-weight:800;padding:9px 5px;">15.4%</td>
+                <td style="text-align:center;color:#475569;font-size:9px;padding:9px 5px;">배당소득세</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 6px;color:#6ee7b7;font-weight:700;">국내 주식 · ETF</td>
+                <td style="text-align:center;color:#fbbf24;padding:9px 5px;">15.4%</td>
+                <td style="text-align:center;color:#6ee7b7;font-weight:800;padding:9px 5px;">0%</td>
+                <td style="text-align:center;color:#475569;font-size:9px;padding:9px 5px;">대주주 제외</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div style="font-size:11px;color:var(--txt3);">20년 장기투자에선<br><strong style="color:#ef4444;">복리를 크게 훼손!</strong></div>
-    </div>
-  </div>
-  <!-- 4 flip cards -->
-  <div class="cols" style="gap:14px;">
-    <!-- ISA -->
-    <div class="flip-wrap" id="fc1" onclick="flipCard('fc1')">
-      <div class="flip-inner">
-        <div class="flip-f card" style="border-color:#2563eb;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:#0d1525;">
-          <div style="font-size:40px;">🏦</div>
-          <div style="font-size:22px;font-weight:900;color:#60a5fa;">ISA</div>
-          <div style="font-size:13px;color:var(--txt);">개인종합자산관리계좌</div>
-          <div style="font-size:11px;color:var(--txt3);">5년 내집마련 핵심</div>
-          <span class="hint">클릭해서 상세 보기</span>
-        </div>
-        <div class="flip-b" style="background:#0a1530;border:1px solid #2563eb;display:flex;flex-direction:column;gap:8px;padding:18px;justify-content:center;">
-          <div style="font-size:13px;font-weight:700;color:#60a5fa;margin-bottom:4px;">ISA 주요 혜택</div>
-          <div style="font-size:11px;color:var(--txt2);line-height:1.7;">
-            ✅ 연간 납입 <strong style="color:#fff;">2,000만원</strong> (→ 4,000만원 확대 예정)<br>
-            ✅ 계좌 내 매매 시 <strong style="color:#6ee7b7;">세금 이연</strong><br>
-            ✅ 수익 200만원까지 <strong style="color:#6ee7b7;">완전 비과세</strong><br>
-            ✅ 초과분 <strong style="color:#fff;">9.9% 분리과세</strong> (일반 15.4%보다 낮음)<br>
-            ✅ 기간: <strong style="color:#fff;">5년</strong> 유지
+
+      <!-- 우측: 절세계좌 3종 — 아이콘 박스 외부 상단, 동일 크기 -->
+      <div style="flex:3;min-height:0;">
+        <div class="card" style="height:100%;padding:14px 16px 12px;display:flex;flex-direction:column;min-height:0;">
+          <div style="font-size:10px;font-weight:700;color:var(--txt3);margin-bottom:8px;">■ 생애주기별 절세계좌 3단계</div>
+          <div style="display:flex;gap:10px;flex:1;min-height:0;">
+
+            <!-- ISA -->
+            <div style="flex:1;display:flex;flex-direction:column;min-height:0;">
+              <div style="text-align:center;margin-bottom:5px;flex-shrink:0;">
+                <span style="font-size:12px;font-weight:900;color:#60a5fa;">🏦 ISA</span>
+              </div>
+              <div style="flex:1;border:2px solid #2563eb77;border-radius:8px;
+                          background:linear-gradient(to bottom,#070f1e,#0a1530);
+                          padding:9px 10px;display:flex;flex-direction:column;gap:4px;min-height:0;">
+                <div style="font-size:9px;color:#60a5fa;font-weight:700;margin-bottom:1px;">입사 초기 · 3~5년 만기</div>
+                <div style="font-size:9px;color:var(--txt2);line-height:1.65;flex:1;">
+                  <div>✅ 연간 <strong style="color:#fff;">2,000만원</strong> 납입</div>
+                  <div>✅ 수익 <strong style="color:#6ee7b7;">200만원</strong> 비과세</div>
+                  <div>✅ 초과분 <strong style="color:#fff;">9.9%</strong> 분리과세</div>
+                  <div>✅ 만기 후 내집마련 자금 활용</div>
+                </div>
+                <div style="background:#0d1f40;border-radius:5px;padding:4px 8px;
+                            font-size:9px;color:#60a5fa;font-weight:700;flex-shrink:0;">🏠 내집마련 핵심</div>
+              </div>
+            </div>
+
+            <!-- 비과세연금 -->
+            <div style="flex:1;display:flex;flex-direction:column;min-height:0;">
+              <div style="text-align:center;margin-bottom:5px;flex-shrink:0;">
+                <span style="font-size:12px;font-weight:900;color:#a78bfa;">🛡️ 비과세연금</span>
+              </div>
+              <div style="flex:1;border:2px solid #8b5cf677;border-radius:8px;
+                          background:linear-gradient(to bottom,#0e0620,#120830);
+                          padding:9px 10px;display:flex;flex-direction:column;gap:4px;min-height:0;">
+                <div style="font-size:9px;color:#a78bfa;font-weight:700;margin-bottom:1px;">10년 이상 장기</div>
+                <div style="font-size:9px;color:var(--txt2);line-height:1.65;flex:1;">
+                  <div>✅ 계좌내 모든 수익 <strong style="color:#c4b5fd;">전액비과세</strong></div>
+                  <div>✅ 인당 월 <strong style="color:#fff;">150만원</strong> 한도 + 10년 유지 조건</div>
+                  <div>✅ 보험상품으로 <strong style="color:#a78bfa;">사업비 부과</strong></div>
+                  <div>✅ SPY, QQQ 등 직구 ETF 투자 가능</div>
+                </div>
+                <div style="background:#1a0d3a;border-radius:5px;padding:4px 8px;
+                            font-size:9px;color:#c4b5fd;font-weight:700;flex-shrink:0;">💡 장기 유지 시 가장 강력</div>
+              </div>
+            </div>
+
+            <!-- 연금저축·IRP -->
+            <div style="flex:1;display:flex;flex-direction:column;min-height:0;">
+              <div style="text-align:center;margin-bottom:5px;flex-shrink:0;">
+                <span style="font-size:12px;font-weight:900;color:#10b981;">🌱 연금저축·IRP</span>
+              </div>
+              <div style="flex:1;border:2px solid #10b98177;border-radius:8px;
+                          background:linear-gradient(to bottom,#061810,#081a10);
+                          padding:9px 10px;display:flex;flex-direction:column;gap:4px;min-height:0;">
+                <div style="font-size:9px;color:#10b981;font-weight:700;margin-bottom:1px;">55세 이후 연금수령</div>
+                <div style="font-size:9px;color:var(--txt2);line-height:1.65;flex:1;">
+                  <div>✅ 연금저축 연 <strong style="color:#fff;">600만원</strong> + IRP <strong style="color:#fff;">300만원</strong></div>
+                  <div>✅ 납입액의 <strong style="color:#6ee7b7;">13.2%</strong> 세액공제</div>
+                  <div>✅ <strong style="color:#10b981;">세액공제 + 과세이연 + 저율과세</strong></div>
+                  <div>✅ 노후준비 <strong style="color:#6ee7b7;">3층연금</strong> 구조</div>
+                </div>
+                <div style="background:#072a1a;border-radius:5px;padding:4px 8px;
+                            font-size:9px;color:#6ee7b7;font-weight:700;flex-shrink:0;">🎯 노후준비 3층연금</div>
+              </div>
+            </div>
+
           </div>
-          <div style="background:#1e3a6e;border-radius:6px;padding:8px;font-size:10px;color:#60a5fa;">💡 성과급도 여기 투입 → 5년 3억 목표의 핵심 계좌</div>
         </div>
       </div>
     </div>
-    <!-- 연금저축 -->
-    <div class="flip-wrap" id="fc2" onclick="flipCard('fc2')">
-      <div class="flip-inner">
-        <div class="flip-f card" style="border-color:#10b981;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:#0d1525;">
-          <div style="font-size:40px;">🌱</div>
-          <div style="font-size:20px;font-weight:900;color:#10b981;">연금저축</div>
-          <div style="font-size:13px;color:var(--txt);">장기 노후 투자</div>
-          <div style="font-size:11px;color:var(--txt3);">세액공제 혜택</div>
-          <span class="hint">클릭해서 상세 보기</span>
+
+    <!-- ══ 하단 50%: 과세 비교 시뮬레이터 ══ -->
+    <div style="flex:1;min-height:0;">
+      <div class="card" style="height:100%;padding:12px 18px;display:flex;flex-direction:column;
+                                min-height:0;background:linear-gradient(160deg,#050d1a,#0d0f1e);">
+
+        <!-- 헤더 -->
+        <div style="display:flex;align-items:baseline;gap:10px;flex-shrink:0;margin-bottom:10px;">
+          <div style="font-size:11px;font-weight:700;color:var(--txt3);">■ 과세 비교 시뮬레이터</div>
+          <div style="font-size:9.5px;color:#475569;">월 100만 · 연 10% · 20년 운용</div>
         </div>
-        <div class="flip-b" style="background:#0a1e14;border:1px solid #10b981;display:flex;flex-direction:column;gap:8px;padding:18px;justify-content:center;">
-          <div style="font-size:13px;font-weight:700;color:#10b981;margin-bottom:4px;">연금저축 주요 혜택</div>
-          <div style="font-size:11px;color:var(--txt2);line-height:1.7;">
-            ✅ 연간 <strong style="color:#fff;">600만원</strong> 납입<br>
-            ✅ 납입액의 <strong style="color:#6ee7b7;">13.2% 세액공제</strong><br>
-            ✅ 연 600만원 → <strong style="color:#6ee7b7;">79만원 환급</strong> (월 6.6만)<br>
-            ✅ 10년 납입 시: 원금 6,000만 + 환급 790만 + 수익<br>
-            ✅ 활용: 월 <strong style="color:#fff;">10~20만원 자동이체</strong> + 연말 성과급
+
+        <div style="display:flex;gap:14px;flex:1;min-height:0;">
+
+          <!-- 좌측: 버튼 4종 (세로) -->
+          <div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0;width:168px;justify-content:center;">
+            <button id="ts1" onclick="animTaxSim20(1)"
+                    style="background:#0f172a;border:1px solid #1e293b;border-radius:7px;
+                           color:#94a3b8;font-size:9.5px;padding:8px 10px;cursor:pointer;
+                           text-align:left;line-height:1.45;transition:border-color .2s,color .2s;">
+              <div style="font-size:8.5px;color:#f87171;font-weight:700;margin-bottom:1px;">🇺🇸 미국 직투 (22%)</div>
+              매년 과세 방식
+            </button>
+            <button id="ts2" onclick="animTaxSim20(2)"
+                    style="background:#0f172a;border:1px solid #1e293b;border-radius:7px;
+                           color:#94a3b8;font-size:9.5px;padding:8px 10px;cursor:pointer;
+                           text-align:left;line-height:1.45;transition:border-color .2s,color .2s;">
+              <div style="font-size:8.5px;color:#fbbf24;font-weight:700;margin-bottom:1px;">🇺🇸 미국 직투 (22%)</div>
+              만기 과세 방식
+            </button>
+            <button id="ts3" onclick="animTaxSim20(3)"
+                    style="background:#0f172a;border:1px solid #1e293b;border-radius:7px;
+                           color:#94a3b8;font-size:9.5px;padding:8px 10px;cursor:pointer;
+                           text-align:left;line-height:1.45;transition:border-color .2s,color .2s;">
+              <div style="font-size:8.5px;color:#fb923c;font-weight:700;margin-bottom:1px;">🇰🇷 국내상장 (15.4%)</div>
+              매년 과세 방식
+            </button>
+            <button id="ts4" onclick="animTaxSim20(4)"
+                    style="background:#0f172a;border:1px solid #1e293b;border-radius:7px;
+                           color:#94a3b8;font-size:9.5px;padding:8px 10px;cursor:pointer;
+                           text-align:left;line-height:1.45;transition:border-color .2s,color .2s;">
+              <div style="font-size:8.5px;color:#a3e635;font-weight:700;margin-bottom:1px;">🇰🇷 국내상장 (15.4%)</div>
+              만기 과세 방식
+            </button>
           </div>
-          <div style="background:#064e3b;border-radius:6px;padding:8px;font-size:10px;color:#6ee7b7;">💡 지금 바로 시작해야 하는 장기 투자 씨앗</div>
-        </div>
-      </div>
-    </div>
-    <!-- IRP -->
-    <div class="flip-wrap" id="fc3" onclick="flipCard('fc3')">
-      <div class="flip-inner">
-        <div class="flip-f card" style="border-color:#f59e0b;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:#0d1525;">
-          <div style="font-size:40px;">💼</div>
-          <div style="font-size:22px;font-weight:900;color:#fbbf24;">IRP</div>
-          <div style="font-size:13px;color:var(--txt);">개인형퇴직연금</div>
-          <div style="font-size:11px;color:var(--txt3);">퇴직금 계좌</div>
-          <span class="hint">클릭해서 상세 보기</span>
-        </div>
-        <div class="flip-b" style="background:#1a1000;border:1px solid #f59e0b;display:flex;flex-direction:column;gap:8px;padding:18px;justify-content:center;">
-          <div style="font-size:13px;font-weight:700;color:#fbbf24;margin-bottom:4px;">IRP 주요 내용</div>
-          <div style="font-size:11px;color:var(--txt2);line-height:1.7;">
-            ✅ 퇴직금 수령 계좌<br>
-            ✅ 자산의 <strong style="color:#fff;">30% 안전자산 의무</strong> 투자<br>
-            ✅ 추가 납입 시 세액공제 적용<br>
-            ⚠️ 소득이 더 커지는 <strong style="color:#fbbf24;">30대부터 시작</strong> 권장<br>
-            ⚠️ 지금은 <strong style="color:#fbbf24;">연금저축 우선</strong>
+
+          <!-- 우측: 결과 영역 -->
+          <div style="flex:1;min-height:0;position:relative;">
+
+            <!-- 결과 표시 -->
+            <div id="taxSimResult" style="display:none;flex:1;flex-direction:row;gap:10px;
+                                          height:100%;min-height:0;align-items:flex-end;">
+              <!-- 과세 bar -->
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;height:100%;">
+                <div id="ts-tax-val" style="font-size:13px;font-weight:800;color:#f87171;min-height:18px;"></div>
+                <div style="flex:1;width:100%;background:#0f172a;border-radius:5px 5px 0 0;
+                            position:relative;overflow:hidden;min-height:0;">
+                  <div id="ts-tax-bar" style="position:absolute;bottom:0;left:0;right:0;
+                                              border-radius:5px 5px 0 0;height:0%;transition:height .8s ease;"></div>
+                </div>
+                <div id="ts-tax-label" style="font-size:8.5px;color:#94a3b8;text-align:center;
+                                              line-height:1.35;min-height:26px;padding-top:2px;"></div>
+              </div>
+              <!-- 과세전 총자산 bar -->
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;height:100%;">
+                <div id="ts-free-val" style="font-size:13px;font-weight:800;color:#10b981;min-height:18px;"></div>
+                <div style="flex:1;width:100%;background:#0f172a;border-radius:5px 5px 0 0;
+                            position:relative;overflow:hidden;min-height:0;">
+                  <div id="ts-free-bar" style="position:absolute;bottom:0;left:0;right:0;
+                                               background:linear-gradient(to top,#10b981,#34d399);
+                                               border-radius:5px 5px 0 0;height:0%;transition:height .8s ease;"></div>
+                </div>
+                <div style="font-size:8.5px;color:#10b981;text-align:center;line-height:1.35;min-height:26px;padding-top:2px;">
+                  과세전 총자산
+                </div>
+              </div>
+              <!-- 차액 callout -->
+              <div style="flex:1.4;background:#050d1a;border:1px solid #1e3a6e;border-radius:9px;
+                          padding:12px 12px;display:flex;flex-direction:column;
+                          justify-content:center;gap:6px;align-self:stretch;">
+                <div style="font-size:8.5px;color:#475569;letter-spacing:.3px;">세후 실수령액</div>
+                <div id="ts-gap-val" style="font-size:18px;font-weight:900;color:#10b981;line-height:1.1;"></div>
+                <div style="font-size:8px;color:#334155;line-height:1.4;">절세계좌 활용 시<br>과세금액이 사라집니다</div>
+                <div id="ts-gap-pct" style="display:none;"></div>
+              </div>
+            </div>
+
+            <!-- 플레이스홀더 -->
+            <div id="taxSimPlaceholder" style="position:absolute;inset:0;display:flex;flex-direction:column;
+                                               align-items:center;justify-content:center;gap:8px;
+                                               border:1.5px dashed #1e293b;border-radius:10px;">
+              <div style="font-size:26px;opacity:.35;">📊</div>
+              <div style="font-size:10.5px;color:#334155;text-align:center;line-height:1.6;">
+                위 시나리오를 선택하면<br>과세 vs 비과세 결과를 비교합니다.
+              </div>
+            </div>
+
           </div>
-          <div style="background:#2a1500;border-radius:6px;padding:8px;font-size:10px;color:#fbbf24;">💡 퇴직금 이동 시 반드시 IRP로 → 세금 절약</div>
         </div>
       </div>
     </div>
-    <!-- 비과세연금 -->
-    <div class="flip-wrap" id="fc4" onclick="flipCard('fc4')">
-      <div class="flip-inner">
-        <div class="flip-f card" style="border-color:#8b5cf6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:#0d1525;">
-          <div style="font-size:40px;">🛡️</div>
-          <div style="font-size:18px;font-weight:900;color:#a78bfa;">비과세연금</div>
-          <div style="font-size:13px;color:var(--txt);">저축성 보험</div>
-          <div style="font-size:11px;color:var(--txt3);">완전 비과세</div>
-          <span class="hint">클릭해서 상세 보기</span>
-        </div>
-        <div class="flip-b" style="background:#160a2e;border:1px solid #8b5cf6;display:flex;flex-direction:column;gap:8px;padding:18px;justify-content:center;">
-          <div style="font-size:13px;font-weight:700;color:#a78bfa;margin-bottom:4px;">비과세연금 주요 혜택</div>
-          <div style="font-size:11px;color:var(--txt2);line-height:1.7;">
-            ✅ 월 <strong style="color:#fff;">150만원 한도</strong> × 10년 유지<br>
-            ✅ 계좌 내 <strong style="color:#c4b5fd;">모든 수익 완전 비과세</strong><br>
-            ✅ QQQ, SPY 등 미국 ETF 투자 가능<br>
-            ✅ 비과세 복리 = 더 강력한 성장<br>
-            ⚠️ 일정기간 사업비 부담
-          </div>
-          <div style="background:#2e1065;border-radius:6px;padding:8px;font-size:10px;color:#c4b5fd;">💡 코스트코 연회비 → 도매가 혜택 원리와 동일</div>
-        </div>
-      </div>
-    </div>
+
   </div>
 </div>
 
-<!-- ══════════════════ SLIDE 9: 실행 계획 ══════════════════ -->
+
+<!-- ══════════════════ SLIDE 9: 재무목표 ══════════════════ -->
 <div class="sl" id="s9">
-  <div class="sh">
-    <span class="stag t-green">09 / 09 &nbsp;·&nbsp; 마무리</span>
-    <div class="stitle">실행 계획 — <em>첫 단추를 잘 끼웁시다</em></div>
+  <div class="sh" style="margin-bottom:14px;">
+    <span class="stag t-green">08 / 08 &nbsp;·&nbsp; 재무 목표</span>
+    <div class="stitle">나의 <em class="eg">재무목표</em> 정하기</div>
   </div>
-  <div class="cols">
-    <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
-      <!-- Timeline -->
-      <div class="card" style="display:flex;flex-direction:column;gap:14px;">
-        <div style="font-size:12px;color:var(--txt3);">클릭해서 각 단계 확인</div>
-        <div class="tl">
-          <div class="tl-item" id="tl1" onclick="toggleTL('tl1')">
-            <div class="tl-dot pulse" style="background:#2563eb;">이번주</div>
-            <div class="tl-label">계좌 개설</div>
-            <div class="tl-detail">ISA 계좌 개설<br>연금저축 계좌 개설<br>(카톡 매뉴얼 발송)</div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;flex:1;min-height:0;">
+
+    <!-- ── 재무목표 ① & ② 나란히 (1:1) — 전체 높이의 1/2 ── -->
+    <div style="display:flex;gap:14px;flex:2;min-height:0;">
+
+      <!-- 재무목표 ① 단기 5년 -->
+      <div class="card" style="flex:1;padding:16px 20px;display:flex;flex-direction:column;
+                                gap:8px;background:linear-gradient(160deg,#05111f,#0a0e1a);">
+        <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+          <div style="background:#1e3a6e;border:1px solid #2563eb44;border-radius:20px;
+                      padding:3px 12px;font-size:9px;font-weight:800;
+                      letter-spacing:1.5px;color:#60a5fa;text-transform:uppercase;">
+            재무목표 ①&nbsp;&nbsp;단기 5년
           </div>
-          <div class="tl-item" id="tl2" onclick="toggleTL('tl2')">
-            <div class="tl-dot" style="background:#2563eb;">이번달</div>
-            <div class="tl-label">자동이체</div>
-            <div class="tl-detail">월 200만원 배분<br>ISA 140만<br>연금저축 60만</div>
+          <div style="font-size:17px;font-weight:900;color:#fff;letter-spacing:-.5px;">
+            5년 내 <span style="color:#60a5fa;">3억</span> 만들기
           </div>
-          <div class="tl-item" id="tl3" onclick="toggleTL('tl3')">
-            <div class="tl-dot" style="background:#b45309;">2차 상담</div>
-            <div class="tl-label">포트폴리오 확정</div>
-            <div class="tl-detail">보험 점검<br>ETF 종목 선정<br>리밸런싱 계획</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:5px;flex:1;justify-content:center;">
+          <div style="display:flex;align-items:flex-start;gap:8px;
+                      background:#07101e;border-radius:7px;padding:8px 12px;">
+            <span style="color:#60a5fa;font-weight:900;flex-shrink:0;">▸</span>
+            <span style="font-size:11px;color:var(--txt2);line-height:1.55;">
+              입사 후 5년은 절대자산을 만들 <strong style="color:#fbbf24;">골든 타임</strong>
+            </span>
           </div>
-          <div class="tl-item" id="tl4" onclick="toggleTL('tl4')">
-            <div class="tl-dot" style="background:#064e3b;">5년 후</div>
-            <div class="tl-label">3억 달성</div>
-            <div class="tl-detail">내집 마련<br>+ 장기투자<br>복리 성장 중</div>
+          <div style="display:flex;align-items:flex-start;gap:8px;
+                      background:#07101e;border-radius:7px;padding:8px 12px;">
+            <span style="color:#60a5fa;font-weight:900;flex-shrink:0;">▸</span>
+            <span style="font-size:11px;color:var(--txt2);line-height:1.55;">
+              월 저축 <strong style="color:#fff;">70%</strong> + 성과급 <strong style="color:#fff;">전액 투입</strong>
+            </span>
           </div>
-          <div class="tl-item" id="tl5" onclick="toggleTL('tl5')">
-            <div class="tl-dot" style="background:#064e3b;">10년+</div>
-            <div class="tl-label">복리 극대화</div>
-            <div class="tl-detail">40대 추가소득<br>자산 자동 증식<br>은퇴 설계 시작</div>
+          <div style="display:flex;align-items:flex-start;gap:8px;
+                      background:#07101e;border-radius:7px;padding:8px 12px;">
+            <span style="color:#60a5fa;font-weight:900;flex-shrink:0;">▸</span>
+            <span style="font-size:11px;color:var(--txt2);line-height:1.55;">
+              <strong style="color:#6ee7b7;">ISA 활용</strong>으로 세금 없이 복리 극대화
+            </span>
           </div>
         </div>
       </div>
-      <!-- Checklist -->
-      <div class="card" style="flex:1;">
-        <div style="font-size:12px;color:var(--txt3);margin-bottom:12px;">2차 상담 준비사항 — 클릭해서 체크</div>
-        <div class="cklist">
-          <div class="ckitem" onclick="this.classList.toggle('done');this.querySelector('.ck').textContent=this.classList.contains('done')?'✓':'';">
-            <div class="ck"></div><div class="cktxt">ISA 계좌 개설 완료</div>
+
+      <!-- 재무목표 ② 장기 20년+ -->
+      <div class="card" style="flex:1;padding:16px 20px;display:flex;flex-direction:column;
+                                gap:8px;background:linear-gradient(160deg,#05111f,#0c0e1d);">
+        <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+          <div style="background:#064e3b;border:1px solid #10b98144;border-radius:20px;
+                      padding:3px 12px;font-size:9px;font-weight:800;
+                      letter-spacing:1.5px;color:#10b981;text-transform:uppercase;">
+            재무목표 ②&nbsp;&nbsp;장기 20년+
           </div>
-          <div class="ckitem" onclick="this.classList.toggle('done');this.querySelector('.ck').textContent=this.classList.contains('done')?'✓':'';">
-            <div class="ck"></div><div class="cktxt">연금저축 계좌 개설 완료</div>
+          <div style="font-size:17px;font-weight:900;color:#fff;letter-spacing:-.5px;">
+            20년 후 <span style="color:#10b981;">제2의 소득</span> 만들기
           </div>
-          <div class="ckitem" onclick="this.classList.toggle('done');this.querySelector('.ck').textContent=this.classList.contains('done')?'✓':'';">
-            <div class="ck"></div><div class="cktxt">보험 자료 정리 (부모님 가입분 포함)</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:5px;flex:1;justify-content:center;">
+          <div style="display:flex;align-items:flex-start;gap:8px;
+                      background:#07101e;border-radius:7px;padding:8px 12px;">
+            <span style="color:#10b981;font-weight:900;flex-shrink:0;">▸</span>
+            <span style="font-size:11px;color:var(--txt2);line-height:1.55;">
+              <strong style="color:#fbbf24;">근로소득 외</strong> 파이프라인 구축
+            </span>
           </div>
-          <div class="ckitem" onclick="this.classList.toggle('done');this.querySelector('.ck').textContent=this.classList.contains('done')?'✓':'';">
-            <div class="ck"></div><div class="cktxt">질문 사항 메모해 오기</div>
+          <div style="display:flex;align-items:flex-start;gap:8px;
+                      background:#07101e;border-radius:7px;padding:8px 12px;">
+            <span style="color:#10b981;font-weight:900;flex-shrink:0;">▸</span>
+            <span style="font-size:11px;color:var(--txt2);line-height:1.55;">
+              <strong style="color:#6ee7b7;">연금저축</strong>과 <strong style="color:#a78bfa;">비과세연금</strong> 활용
+            </span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;
+                      background:#07101e;border:1px solid #ef444422;border-radius:7px;padding:8px 12px;">
+            <span style="color:#f87171;font-weight:900;flex-shrink:0;">⚠</span>
+            <span style="font-size:11px;color:var(--txt2);line-height:1.55;">
+              <strong style="color:#f87171;">세금의 역복리</strong> 주의 — 과세계좌 장기보유 함정
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── 투자단계: 5단계 텍스트 가로 나열 — 전체 높이의 1/4 ── -->
+    <div class="card" style="flex:1;min-height:0;padding:12px 18px;
+                              background:linear-gradient(160deg,#050d1a,#0d0f1e);
+                              display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:9.5px;font-weight:700;color:var(--txt3);letter-spacing:.5px;margin-bottom:10px;">
+        ■ 자산관리 첫걸음을 위한 투자단계
+      </div>
+      <div style="display:flex;align-items:center;gap:0;">
+        <div style="flex:1;text-align:center;padding:8px 6px;background:#0f172a;
+                    border-radius:7px 0 0 7px;border:1px solid #1e293b;">
+          <div style="font-size:11px;font-weight:800;color:#475569;margin-bottom:3px;">①</div>
+          <div style="font-size:9px;color:#64748b;line-height:1.4;word-break:keep-all;">장기투자를<br>정한다</div>
+        </div>
+        <div style="font-size:12px;color:#334155;padding:0 4px;flex-shrink:0;">›</div>
+        <div style="flex:1;text-align:center;padding:8px 6px;background:#0f1f35;
+                    border:1px solid #1e3a6e;">
+          <div style="font-size:11px;font-weight:800;color:#3b5270;margin-bottom:3px;">②</div>
+          <div style="font-size:9px;color:#4a6080;line-height:1.4;word-break:keep-all;">글로벌 비중을<br>늘린다</div>
+        </div>
+        <div style="font-size:12px;color:#1e3a6e;padding:0 4px;flex-shrink:0;">›</div>
+        <div style="flex:1;text-align:center;padding:8px 6px;background:#0a1530;
+                    border:1px solid #2563eb66;">
+          <div style="font-size:11px;font-weight:800;color:#2563eb;margin-bottom:3px;">③</div>
+          <div style="font-size:9px;color:#60a5fa;line-height:1.4;word-break:keep-all;">시장지수(ETF)에<br>투자한다</div>
+        </div>
+        <div style="font-size:12px;color:#2563eb;padding:0 4px;flex-shrink:0;">›</div>
+        <div style="flex:1;text-align:center;padding:8px 6px;background:#061810;
+                    border:1px solid #10b98166;">
+          <div style="font-size:11px;font-weight:800;color:#059669;margin-bottom:3px;">④</div>
+          <div style="font-size:9px;color:#6ee7b7;line-height:1.4;word-break:keep-all;">절세계좌를<br>활용한다</div>
+        </div>
+        <div style="font-size:12px;color:#10b981;padding:0 4px;flex-shrink:0;">›</div>
+        <div style="flex:1.3;text-align:center;padding:8px 8px;
+                    background:linear-gradient(135deg,#130e00,#1a1200);
+                    border-radius:0 7px 7px 0;border:1px solid #f59e0b66;">
+          <div style="font-size:11px;font-weight:900;color:#f59e0b;margin-bottom:3px;">⑤</div>
+          <div style="font-size:9px;color:#fbbf24;font-weight:700;line-height:1.4;word-break:keep-all;">투자기간에 적합한<br>상품을 선택한다</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 최하단 제안 문구 — 전체 높이의 1/4 ── -->
+    <div style="flex:1;min-height:0;display:flex;align-items:center;">
+      <div style="width:100%;background:linear-gradient(135deg,#050d1a,#0a1228);
+                  border:1px solid #1e3a6e;border-left:3px solid #3b82f6;
+                  border-radius:10px;padding:14px 20px;
+                  display:flex;align-items:center;gap:14px;">
+        <div style="font-size:22px;flex-shrink:0;">💡</div>
+        <div>
+          <div style="font-size:9px;color:#3b82f6;font-weight:700;letter-spacing:.8px;
+                      text-transform:uppercase;margin-bottom:4px;">2차 제안</div>
+          <div style="font-size:12.5px;color:#e2e8f0;line-height:1.65;font-weight:500;">
+            기간별 재무목표에 가장 적합한
+            <strong style="color:#60a5fa;">저축 / 투자 포트폴리오</strong>를
+            <strong style="color:#a78bfa;">절세계좌</strong>를 기반으로 제공
           </div>
         </div>
       </div>
     </div>
-    <!-- Right: final message -->
-    <div style="width:280px;flex-shrink:0;display:flex;flex-direction:column;gap:14px;">
-      <div class="card" style="background:linear-gradient(160deg,#064e3b,#0d1525);border-color:#10b981;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;padding:28px;">
-        <div style="font-size:44px;">🏆</div>
-        <div style="font-size:17px;font-weight:800;color:#fff;line-height:1.4;">전 세계에서 가장 경쟁력 있는 제조업 회사에 입사하셨습니다</div>
-        <div style="height:1px;background:#0a3a2a;width:80%;"></div>
-        <div style="font-size:13px;color:var(--txt2);line-height:1.7;">
-          선배들보다 <strong style="color:#6ee7b7;">소득도 높고</strong><br>
-          <strong style="color:#6ee7b7;">시간도 많습니다</strong><br><br>
-          지금부터 시작하면<br>
-          선배들이 부러워할<br>
-          자산을 만들 수 있어요
-        </div>
-        <div style="font-size:15px;font-weight:800;color:#10b981;">첫 단추를 잘 끼웁시다! 🚀</div>
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -1097,7 +1289,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--bg);color:va
 
 <script>
 // ── Slide system ──
-const TOTAL = 9;
+const TOTAL = 8;
 let cur = 0;
 const slides = document.querySelectorAll('.sl');
 
@@ -1283,6 +1475,8 @@ function updateS3Display(resetToDefault) {
   document.getElementById('s3btn').disabled=false;
   document.getElementById('s3btn').textContent='▶ 시뮬레이션 시작';
   document.getElementById('s3hint').style.opacity='1';
+  // 문구 리셋 (조건 변경 시 즉시 숨김)
+  document.getElementById('s3-msg-wrap').style.opacity='0';
 }
 
 // 비교 라인 엔드라벨·갭 위치 업데이트 헬퍼
@@ -1363,6 +1557,9 @@ function animS3(){
       const compFV=s3delay===5?s3FV(monthly,rate,years-5):s3FV(monthly,rate,years-10);
       const gapFV=(mainFV-compFV).toFixed(0);
       document.getElementById('s3diff').textContent=`차이: 약 ${gapFV}억원 (${s3delay}년 지연)`;
+
+      // 그래프 하단 문구 표기 — 애니메이션 완료 후 500ms 지연 페이드인
+      setTimeout(()=>{ document.getElementById('s3-msg-wrap').style.opacity='1'; }, 500);
     }
   }
   requestAnimationFrame(step);
@@ -1403,16 +1600,21 @@ function showCrisis(){
   if(crisisDone)return; crisisDone=true;
   document.getElementById('crisisBtn').textContent='위기 표시 완료';
   document.getElementById('crisisBtn').disabled=true;
+  // 위기 배경 rect 페이드인
   ['cr1','cr2','cr3','cr4'].forEach((id,i)=>{
     setTimeout(()=>{
       const el=document.getElementById(id);
-      el.style.transition='fill-opacity .4s';
-      el.style['fill-opacity']='0';
-      el.setAttribute('fill-opacity','0.12');
-    },i*200);
+      if(el) el.setAttribute('fill-opacity','0.14');
+    },i*220);
   });
-  document.querySelectorAll('.crisis-lbl').forEach((el,i)=>{
-    setTimeout(()=>{el.style.opacity='1';el.style.transition='opacity .4s';},i*200);
+  // 점선 + 레이블 순차 페이드인
+  const lines=[...document.querySelectorAll('.crisis-line')];
+  const lbls=[...document.querySelectorAll('.crisis-lbl')];
+  lines.forEach((el,i)=>{
+    setTimeout(()=>{ el.style.transition='opacity .4s'; el.style.opacity='1'; },i*220);
+  });
+  lbls.forEach((el,i)=>{
+    setTimeout(()=>{ el.style.transition='opacity .4s'; el.style.opacity='1'; },i*220+100);
   });
 }
 
@@ -1443,8 +1645,10 @@ function animPie(){
   // 리셋
   const tg=document.getElementById('pieTitleG');
   const lg=document.getElementById('pieLegendG');
+  const hole=document.getElementById('pieHole');
   if(tg){tg.style.transition='none';tg.style.opacity='0';}
   if(lg){lg.style.transition='none';lg.style.opacity='0';}
+  if(hole){hole.style.transition='none';hole.style.opacity='0';}
   slices.forEach(s=>{
     const el=document.getElementById(s.id);
     if(el) el.setAttribute('stroke-dasharray','0 '+circ.toFixed(2));
@@ -1453,6 +1657,8 @@ function animPie(){
   const dur=450, gap=80;
   slices.forEach((s,i)=>{
     setTimeout(()=>{
+      // 첫 슬라이스 시작 시 도넛 홀 표시
+      if(i===0 && hole){ hole.style.transition='opacity .3s'; hole.style.opacity='1'; }
       const start=performance.now();
       (function step(ts){
         const p=Math.min((ts-start)/dur,1);
@@ -1462,10 +1668,12 @@ function animPie(){
         if(el) el.setAttribute('stroke-dasharray',len.toFixed(2)+' '+(circ-len).toFixed(2));
         if(p<1) requestAnimationFrame(step);
         else if(i===slices.length-1){
-          // 전체 완료 → 타이틀·범례 페이드인
+          // 전체 완료 → 타이틀·범례 + 주식비중 배지 페이드인
           setTimeout(()=>{
             if(tg){tg.style.transition='opacity .5s';tg.style.opacity='1';}
             if(lg){lg.style.transition='opacity .5s';lg.style.opacity='1';}
+            const bd=document.getElementById('npStockBreakdown');
+            if(bd){ bd.style.opacity='1'; }
           },120);
         }
       })(performance.now());
@@ -1484,21 +1692,33 @@ function animNP(){
     const el=document.getElementById(id);
     if(el){ el.style.transition='none'; el.style.opacity='0'; }
   });
-  // 파이차트 리셋
+  // 수익=원금 교차선 리셋
+  ['npInflLine','npInflTxt'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el){ el.style.transition='none'; el.style.opacity='0'; }
+  });
+  // 파이차트 + 주식비중 배지 리셋
   const tg=document.getElementById('pieTitleG');
   const lg=document.getElementById('pieLegendG');
+  const bd=document.getElementById('npStockBreakdown');
   if(tg){tg.style.transition='none';tg.style.opacity='0';}
   if(lg){lg.style.transition='none';lg.style.opacity='0';}
+  if(bd){bd.style.transition='none';bd.style.opacity='0';}
   const circ=2*Math.PI*24.5;
   ['pieArc1','pieArc2','pieArc3'].forEach(id=>{
     const el=document.getElementById(id);
     if(el) el.setAttribute('stroke-dasharray','0 '+circ.toFixed(2));
   });
 
-  // ② 카운터 애니메이션
-  setTimeout(()=>countUp('c-total',1473,'',2000),200);  // 2025년 말 잠정
-  setTimeout(()=>countUp('c-princ',483,'',2200),400);   // 기금 내 납입원금 기여분
-  setTimeout(()=>countUp('c-ret',990,'',2400),600);     // 누적 운용수익금 잠정
+  // ── 레이블 헬퍼: 카운트 완료 후 "값 조원 (설명)" 인라인으로 업데이트 ──
+  const updateLabel = (id, val, sub) => {
+    document.getElementById(id).innerHTML = `${val}<span style="font-size:11px; margin-left:4px;">조원 (${sub})</span>`;
+  };
+
+  // ② 카운터 애니메이션 + 완료 시 레이블 추가
+  setTimeout(()=>{ countUp('c-total',1473,'',2000); setTimeout(()=>updateLabel('c-total',1473,'2025년말 잠정'),2000); },200);
+  setTimeout(()=>{ countUp('c-princ',483,'',2200);  setTimeout(()=>updateLabel('c-princ',483,'기금 내 납입원금'),2200); },400);
+  setTimeout(()=>{ countUp('c-ret',990,'',2400);    setTimeout(()=>updateLabel('c-ret',990,'누적 운용수익금 잠정'),2400); },600);
 
   // ③ 그래프 클립 애니메이션 → 완료 시 엔드라벨 페이드인 → 파이 애니메이션
   const dur=2500;
@@ -1513,6 +1733,13 @@ function animNP(){
       document.getElementById('npend1').style.opacity='1';
       document.getElementById('npend2').style.transition='opacity .5s';
       document.getElementById('npend2').style.opacity='1';
+      // 수익=원금 교차선 페이드인 (그래프 완료 직후)
+      setTimeout(()=>{
+        ['npInflLine','npInflTxt'].forEach(id=>{
+          const el=document.getElementById(id);
+          if(el){ el.style.transition='opacity .5s'; el.style.opacity='1'; }
+        });
+      }, 200);
       // 엔드라벨 페이드인 후 파이차트 시작
       setTimeout(animPie, 600);
     }
@@ -1522,22 +1749,75 @@ function animNP(){
 
 // showInflection 제거 — 변곡점 버튼 삭제됨
 
-// ── Slide 7: Interactive ──
-let usOpen=false;
-function toggleUS(){
-  usOpen=!usOpen;
-  document.getElementById('uslist').style.display=usOpen?'block':'none';
+// ── Slide 7: 개별 종목 vs S&P 500 ──
+const _stocks = {
+  ge: {
+    label:'GE — 30년 보유 시 (1993~2023)',
+    stockVal:'+320%', spVal:'+1,800%',
+    sW:17.8, spW:100,
+    color:'#ef4444',
+    cardId:'gc-ge',
+    msg:'🏭 GE는 30년 전 압도적 세계 1위 기업이었습니다. 현재 누적 수익률은 약 <strong style="color:#f87171;">+320%</strong>로, 같은 기간 S&P 500(+1,800%) 대비 <strong style="color:#f87171;">약 1/5 수준</strong>. 개별 종목 리스크의 가장 명확한 사례입니다.'
+  },
+  exxon: {
+    label:'Exxon — 20년 보유 시 (2003~2023)',
+    stockVal:'+150%', spVal:'+530%',
+    sW:28, spW:100,
+    color:'#f59e0b',
+    cardId:'gc-exxon',
+    msg:'⛽ Exxon은 2000년대 에너지 시대의 주인공이었습니다. 20년 보유 시 <strong style="color:#fcd34d;">+150%</strong>로 나쁘지 않지만, 같은 기간 S&P 500은 <strong style="color:#10b981;">+530%</strong>. 테크 시대로 전환되며 지수는 이미 Exxon을 줄이고 기술주를 자동 확대했습니다.'
+  },
+  apple: {
+    label:'Apple — 10년 보유 시 (2013~2023)',
+    stockVal:'+1,100%', spVal:'+230%',
+    sW:100, spW:20.9,
+    color:'#60a5fa',
+    cardId:'gc-apple',
+    msg:'🍎 Apple은 지난 10년 <strong style="color:#93c5fd;">+1,100%</strong>의 압도적 수익률을 기록했습니다. 하지만 30년 전 GE처럼, 20년 전 Exxon처럼 — <strong style="color:#fbbf24;">영원한 1위는 없습니다.</strong> S&P 500을 보유하면 Apple의 상승도 자동으로 따라오며, 다음 Apple도 자동 편입됩니다.'
+  }
+};
+let _curStock=null;
+function selectStock(name){
+  const d=_stocks[name];
+  if(!d) return;
+  // 선택 강조
+  Object.values(_stocks).forEach(s=>{
+    const c=document.getElementById(s.cardId);
+    if(c){ c.style.outline='none'; c.style.boxShadow='none'; }
+  });
+  const ac=document.getElementById(d.cardId);
+  if(ac){ ac.style.outline='2px solid '+d.color; ac.style.boxShadow='0 0 8px '+d.color+'40'; }
+  // 패널 전환
+  document.getElementById('compare-placeholder').style.display='none';
+  const cc=document.getElementById('compare-content');
+  cc.style.display='flex';
+  // 내용 설정
+  document.getElementById('compare-title').textContent=d.label;
+  document.getElementById('csl').textContent=d.label.split('—')[0].trim();
+  document.getElementById('csv').style.color=d.color;
+  document.getElementById('csv').textContent=d.stockVal;
+  document.getElementById('spv').textContent=d.spVal;
+  document.getElementById('cmsg').innerHTML=d.msg;
+  // 바 애니메이션 리셋 → 실행
+  const sb=document.getElementById('csbar'), spb=document.getElementById('spbar');
+  sb.style.transition='none'; sb.style.width='0'; sb.textContent=''; sb.style.background=d.color;
+  spb.style.transition='none'; spb.style.width='0'; spb.textContent='';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    sb.style.transition='width .8s ease-out';
+    sb.style.width=Math.max(d.sW,3)+'%'; sb.textContent=d.stockVal;
+    spb.style.transition='width .8s ease-out';
+    spb.style.width=Math.max(d.spW,3)+'%'; spb.textContent=d.spVal;
+  }));
+  _curStock=name;
 }
-let geShown=false,etfShown=false;
-function showGE(){
-  if(geShown)return; geShown=true;
-  document.getElementById('gelbl').textContent='-90%';
-  document.getElementById('gesub').textContent='지금 1등 엔비디아로 교체됨';
-}
-function showETF(){
-  if(etfShown)return; etfShown=true;
-  document.getElementById('etflbl').textContent='+1,000%';
-  document.getElementById('etfsub').textContent='연 10.5% 자동 리밸런싱';
+function _resetS7(){
+  _curStock=null;
+  Object.values(_stocks).forEach(s=>{
+    const c=document.getElementById(s.cardId);
+    if(c){ c.style.outline='none'; c.style.boxShadow='none'; }
+  });
+  document.getElementById('compare-placeholder').style.display='flex';
+  document.getElementById('compare-content').style.display='none';
 }
 
 // ── Slide 8: Flip cards ──
@@ -1558,10 +1838,270 @@ function animAlloc(){
   },300);
 }
 
+// ── 세로저축 애니메이션 (슬라이드9) ──
+let _vsRaf = null, _vsPhase = 0;
+let _taxRaf = null;
+
+function animVerticalSavings() {
+  if (_vsRaf) { cancelAnimationFrame(_vsRaf); _vsRaf = null; }
+
+  const B1_END    = 30000;
+  const B2_MID    = 12900;
+  const B2_END    = 110000;
+  const CHART_MAX = 120000;
+  const P1_DUR    = 2200;
+  const P2_DUR    = 2800;
+
+  const $ = id => document.getElementById(id);
+  const b1 = $('vb1'), b2 = $('vb2');
+  const v1 = $('vb1-val'), v2 = $('vb2-val');
+  const bg1 = $('vb1-badge'), lb2 = $('vb2-label');
+  if (!b1 || !b2) return;
+
+  const fmt = v => v >= 10000 ? (v / 10000).toFixed(1) + '억' : Math.round(v).toLocaleString() + '만';
+  const easeOut = t => 1 - (1 - t) ** 3;
+  const easeIn  = t => t * t;
+
+  _vsPhase = 1;
+  let t0 = null;
+
+  function tick(ts) {
+    if (_vsPhase === 1) {
+      if (!t0) t0 = ts;
+      const p = Math.min((ts - t0) / P1_DUR, 1);
+      const e = easeOut(p);
+      const a1 = B1_END * e, a2 = B2_MID * e;
+      b1.style.height = (a1 / CHART_MAX * 100).toFixed(2) + '%';
+      b2.style.height = (a2 / CHART_MAX * 100).toFixed(2) + '%';
+      if (v1) v1.textContent = fmt(a1);
+      if (v2) v2.textContent = fmt(a2);
+      if (p < 1) { _vsRaf = requestAnimationFrame(tick); return; }
+
+      if (bg1) { bg1.textContent = '✅ 3억 달성!'; bg1.style.color = '#fbbf24'; bg1.style.fontWeight = '800'; }
+      b2.style.background = 'linear-gradient(to top, #10b981 0%, #f59e0b 100%)';
+      if (lb2) { lb2.textContent = '💰 소득 파이프라인'; lb2.style.color = '#f59e0b'; lb2.style.fontWeight = '800'; }
+
+      _vsPhase = 2;
+      t0 = null;
+      setTimeout(() => { _vsRaf = requestAnimationFrame(tick); }, 420);
+
+    } else if (_vsPhase === 2) {
+      if (!t0) t0 = ts;
+      const p = Math.min((ts - t0) / P2_DUR, 1);
+      const a2 = B2_MID + (B2_END - B2_MID) * easeIn(p);
+      b2.style.height = (a2 / CHART_MAX * 100).toFixed(2) + '%';
+      if (v2) v2.textContent = fmt(a2);
+      if (p < 1) { _vsRaf = requestAnimationFrame(tick); return; }
+      if (v2) v2.textContent = fmt(B2_END);
+      _vsPhase = 0;
+    }
+  }
+
+  _vsRaf = requestAnimationFrame(tick);
+}
+
+// ── 20년 과세 시뮬레이션 (슬라이드8) ──
+function animTaxSim20(type) {
+  const sc = {
+    1: { label:'미국직투(22%)\n매년 과세 방식',  val:57370, color:'#f87171' },
+    2: { label:'미국직투(22%)\n만기 과세 방식',  val:64492, color:'#fb923c' },
+    3: { label:'국내상장(15.4%)\n매년 과세 방식',val:62298, color:'#fbbf24' },
+    4: { label:'국내상장(15.4%)\n만기 과세 방식',val:67918, color:'#a3e635' }
+  }[type];
+  const FREE = 75913;
+
+  for (let i = 1; i <= 4; i++) {
+    const b = document.getElementById('ts' + i);
+    if (!b) continue;
+    b.style.background  = (i === type) ? '#1e3a6e' : '#0f172a';
+    b.style.borderColor = (i === type) ? '#2563eb' : '#1e293b';
+    b.style.color       = (i === type) ? '#93c5fd' : '#94a3b8';
+  }
+
+  document.getElementById('taxSimResult').style.display = 'flex';
+  const ph = document.getElementById('taxSimPlaceholder');
+  if (ph) ph.style.display = 'none';
+  const taxBar  = document.getElementById('ts-tax-bar');
+  const freeBar = document.getElementById('ts-free-bar');
+  taxBar.style.height  = '0%';
+  freeBar.style.height = '0%';
+  // taxBar = 과세금액(빨강), freeBar = 과세전 총자산(초록, 항상 100%)
+  taxBar.style.background = '#ef4444';
+  document.getElementById('ts-tax-val').textContent   = '';
+  document.getElementById('ts-free-val').textContent  = '';
+  document.getElementById('ts-tax-label').textContent = '과세금액';
+  document.getElementById('ts-gap-val').textContent   = '';
+  document.getElementById('ts-gap-pct').textContent   = '';
+
+  if (_taxRaf) { cancelAnimationFrame(_taxRaf); _taxRaf = null; }
+  const DURATION = 1500;
+  const start = performance.now();
+  const taxAmt = FREE - sc.val;   // 실제 납부 세금액
+
+  function tick(ts) {
+    const t    = Math.min((ts - start) / DURATION, 1);
+    const ease = 1 - Math.pow(1 - t, 3);
+    // freeBar: 과세전 총자산 항상 100% (기준선)
+    freeBar.style.height = (100 * ease).toFixed(1) + '%';
+    // taxBar: 과세금액만큼(비율로) 표시 — 동일한 baseline에서 시작
+    taxBar.style.height  = (taxAmt / FREE * 100 * ease).toFixed(1) + '%';
+    if (t > 0.2) {
+      document.getElementById('ts-free-val').textContent = (Math.round(FREE    * ease) / 10000).toFixed(1) + '억';
+      document.getElementById('ts-tax-val').textContent  = '−' + (Math.round(taxAmt * ease) / 10000).toFixed(1) + '억';
+    }
+    if (t < 1) {
+      _taxRaf = requestAnimationFrame(tick);
+    } else {
+      _taxRaf = null;
+      // 세후 실수령액 표시
+      document.getElementById('ts-gap-val').textContent = (sc.val / 10000).toFixed(1) + '억';
+    }
+  }
+  _taxRaf = requestAnimationFrame(tick);
+}
+
+// ── animTaxComparison (슬라이드8) ──
+function animTaxComparison(type) {
+  ['simBtn1','simBtn2'].forEach((id,i)=>{
+    const btn=document.getElementById(id);
+    if(!btn) return;
+    const active=(i+1===type);
+    btn.style.background=active?'#1e3a6e':'#0f172a';
+    btn.style.borderColor=active?'#2563eb':'#334155';
+    btn.style.color=active?'#60a5fa':'#94a3b8';
+  });
+  const res=document.getElementById('simResult');
+  if(!res) return;
+
+  const data=[
+    null,
+    { // Sim 1: 일반 vs ISA, 5년
+      label:'월 200만원 × 5년 (연 8%) 최종 자산 비교',
+      items:[
+        {name:'일반계좌',     val:14279, color:'#ef4444'},
+        {name:'ISA 절세계좌', val:14447, color:'#60a5fa'},
+      ],
+      diff:'약 168만원 절세',
+      note:'비과세 200만 + 초과분 9.9% 분리과세 적용'
+    },
+    { // Sim 2: 일반 vs 절세계좌, 20년
+      label:'월 200만원 × 20년 (연 8%) 최종 자산 비교',
+      items:[
+        {name:'일반계좌 (세후)',   val:98500,  color:'#ef4444'},
+        {name:'절세계좌 (비과세)', val:110000, color:'#10b981'},
+      ],
+      diff:'약 1억 1,500만원 차이!',
+      note:'세금 차이가 20년 복리를 통해 자산을 가릅니다'
+    }
+  ];
+
+  const d=data[type];
+  const maxVal=Math.max(...d.items.map(it=>it.val));
+
+  res.innerHTML=`
+    <div style="font-size:10px;color:#94a3b8;margin-bottom:4px;">${d.label}</div>
+    ${d.items.map((item,idx)=>`
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:82px;font-size:10px;color:${item.color};font-weight:700;flex-shrink:0;">${item.name}</div>
+        <div style="flex:1;background:#0f172a;border-radius:4px;height:22px;overflow:hidden;">
+          <div id="sbar${type}_${idx}"
+               style="width:0%;height:100%;background:${item.color};border-radius:4px;
+                      transition:width 1.1s ease;">
+          </div>
+        </div>
+        <div id="sval${type}_${idx}"
+             style="width:68px;font-size:10.5px;color:${item.color};font-weight:800;
+                    text-align:right;flex-shrink:0;opacity:0;transition:opacity .5s;">
+          ${item.val>=10000?(item.val/10000).toFixed(1)+'억':(item.val.toLocaleString()+'만')}
+        </div>
+      </div>
+    `).join('')}
+    <div id="simDiff${type}"
+         style="margin-top:6px;background:#0f172a;border-radius:7px;padding:7px 12px;
+                display:flex;justify-content:space-between;align-items:center;
+                opacity:0;transition:opacity .6s;">
+      <div style="font-size:9.5px;color:#475569;">${d.note}</div>
+      <div style="font-size:12px;font-weight:800;color:#fbbf24;">✨ ${d.diff}</div>
+    </div>
+  `;
+
+  requestAnimationFrame(()=>{
+    d.items.forEach((item,idx)=>{
+      setTimeout(()=>{
+        const bar=document.getElementById(`sbar${type}_${idx}`);
+        const val=document.getElementById(`sval${type}_${idx}`);
+        if(bar) bar.style.width=(item.val/maxVal*100)+'%';
+        if(val) val.style.opacity='1';
+      }, idx*350);
+    });
+    setTimeout(()=>{
+      const diff=document.getElementById(`simDiff${type}`);
+      if(diff) diff.style.opacity='1';
+    }, 1000);
+  });
+}
+
+// ── 투자 실력의 계단 (슬라이드8) ──
+const _stairs=[
+  {icon:'①', text:'장기투자를 정한다',                    color:'#475569', barColor:'#334155'},
+  {icon:'②', text:'글로벌 비중을 늘린다',                 color:'#64748b', barColor:'#3b5270'},
+  {icon:'③', text:'시장지수(ETF)에 투자한다',             color:'#60a5fa', barColor:'#1d4ed8'},
+  {icon:'④', text:'절세계좌를 활용한다',                  color:'#6ee7b7', barColor:'#059669'},
+  {icon:'★', text:'투자기간에 적합한 상품을 선택한다',    color:'#fbbf24', barColor:'#d97706', bold:true, highlight:true},
+];
+
+function _renderStairs(){
+  const el=document.getElementById('staircase');
+  if(!el) return;
+  el.innerHTML='';
+  // 플랫폼(계단) 높이: 좌→우 낮→높 (5단계)
+  const heights=[16,28,44,60,80];
+  _stairs.forEach((s,i)=>{
+    // 화살표 (첫 항목 제외)
+    if(i>0){
+      const arr=document.createElement('div');
+      arr.style.cssText=`width:14px;flex-shrink:0;display:flex;align-items:flex-end;
+        padding-bottom:${heights[i]-6}px;color:#334155;font-size:11px;line-height:1;
+        opacity:0;transition:opacity .3s;`;
+      arr.textContent='▶';
+      el.appendChild(arr);
+      setTimeout(()=>{ arr.style.opacity='1'; }, 80+i*200);
+    }
+    // 계단 컬럼
+    const d=document.createElement('div');
+    d.style.cssText=`flex:1;display:flex;flex-direction:column;align-items:center;
+      opacity:0;transition:opacity .4s,transform .4s;transform:translateY(6px);`;
+    // 텍스트 영역 (위쪽, flex:1 — 남는 공간 채움)
+    const textDiv=document.createElement('div');
+    textDiv.style.cssText=`flex:1;display:flex;align-items:flex-end;justify-content:center;
+      padding:0 3px 5px;`;
+    textDiv.innerHTML=`<div style="font-size:${s.highlight?'9px':'8.5px'};text-align:center;
+      color:${s.color};font-weight:${s.bold?'700':'500'};line-height:1.35;word-break:keep-all;">${s.text}</div>`;
+    // 계단 플랫폼 (아래쪽, 높이 애니메이션)
+    const platform=document.createElement('div');
+    platform.style.cssText=`width:100%;height:0;flex-shrink:0;
+      background:${s.highlight?'linear-gradient(to top,'+s.barColor+',#f59e0b)':s.barColor};
+      border-radius:5px 5px 0 0;display:flex;align-items:center;justify-content:center;
+      border:${s.highlight?'1px solid #f59e0b55':'1px solid transparent'};
+      border-bottom:none;transition:height .55s cubic-bezier(.4,0,.2,1);overflow:hidden;`;
+    platform.innerHTML=`<span style="font-size:10px;color:#fff;font-weight:800;opacity:0;
+      transition:opacity .3s .3s;">${s.icon}</span>`;
+    d.appendChild(textDiv);
+    d.appendChild(platform);
+    el.appendChild(d);
+    setTimeout(()=>{
+      d.style.opacity='1';
+      d.style.transform='translateY(0)';
+      platform.style.height=heights[i]+'px';
+      setTimeout(()=>{ const ic=platform.querySelector('span'); if(ic) ic.style.opacity='1'; }, 300);
+    }, 150+i*200);
+  });
+}
+
 // ── On slide enter triggers ──
 function onEnter(n) {
   if(n===1) {
-    // 슬라이드2로 돌아오면 클릭 전 초기 상태로 리셋
+    // 슬라이드2: 무빙워크 리셋
     ll=false; rl=false;
     const mwa=document.getElementById('mw-anim');
     const sra=document.getElementById('sr-anim');
@@ -1569,10 +2109,41 @@ function onEnter(n) {
     if(sra) sra.style.display='none';
     document.querySelectorAll('#ll .ritem,#rl .ritem').forEach(el=>el.classList.remove('show'));
   }
-  if(n===2) { switchS3(s3delay, true); } // 슬라이드3 복귀 시 파라미터+애니메이션 리셋
-  if(n===3) animNP();    // 슬라이드4(국민연금) — 새 위치
-  if(n===4) animSP500(); // 슬라이드5(두가지목표) — 새 위치
-  if(n===5) animAlloc(); // 슬라이드6(S&P500) — 새 위치
+  if(n===2) {
+    // 슬라이드3: 복리 시뮬 리셋
+    switchS3(s3delay, true);
+    document.getElementById('s3-msg-wrap').style.opacity='0';
+  }
+  if(n===3) animNP();    // 슬라이드4: 국민연금
+  if(n===4) {
+    // 슬라이드5: S&P500 리셋 + 재생
+    sp5done=false; crisisDone=false;
+    document.getElementById('spcr').setAttribute('width','0');
+    const spLbl=document.getElementById('spendlbl');
+    if(spLbl){ spLbl.style.transition='none'; spLbl.style.opacity='0'; }
+    ['cr1','cr2','cr3','cr4'].forEach(id=>{ const el=document.getElementById(id); if(el) el.setAttribute('fill-opacity','0'); });
+    document.querySelectorAll('.crisis-lbl,.crisis-line').forEach(el=>{ el.style.transition='none'; el.style.opacity='0'; });
+    const btn=document.getElementById('crisisBtn');
+    if(btn){ btn.textContent='위기 구간 표시'; btn.disabled=false; }
+    animSP500();
+  }
+  if(n===5) _resetS7();  // 슬라이드6: 미국 & ETF 비교 패널 리셋
+  if(n===6) {
+    // 슬라이드7: 절세 전략 — 과세 시뮬레이션 초기화
+    for (let i = 1; i <= 4; i++) {
+      const b = document.getElementById('ts' + i);
+      if (!b) continue;
+      b.style.background  = '#0f172a';
+      b.style.borderColor = '#1e293b';
+      b.style.color       = '#94a3b8';
+    }
+    const res = document.getElementById('taxSimResult');
+    if (res) res.style.display = 'none';
+    const ph = document.getElementById('taxSimPlaceholder');
+    if (ph) ph.style.display = 'flex';
+    if (_taxRaf) { cancelAnimationFrame(_taxRaf); _taxRaf = null; }
+  }
+  // n===7: 슬라이드9 재무목표 — 정적 UI, 별도 애니메이션 없음
 }
 
 // Init
